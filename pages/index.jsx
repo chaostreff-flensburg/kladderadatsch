@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Task from "../components/Task";
 import Slider from "../components/Slider";
+import Energyheadline from "../components/Energyheadline";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 class Page extends React.Component {
@@ -40,6 +41,7 @@ class Page extends React.Component {
               )}
             </Droppable>
           </DragDropContext>
+          <Energyheadline />
           <Slider />
         </main>
 
