@@ -3,8 +3,20 @@ import { Settings } from "react-feather";
 import { Calendar } from "react-feather";
 
 class Page extends React.Component {
-  getDateTime = () => {
-    return "Hello world 2";
+  getDate = () => {
+    var dateTime = new Date();
+    var weekdays = [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag",
+      "Sonnatg"
+    ];
+    var weekday = dateTime.getDay();
+    var day = dateTime.getDate() + "." + dateTime.getMonth();
+    return weekdays[weekday] + " " + day;
   };
 
   render() {
@@ -14,7 +26,7 @@ class Page extends React.Component {
           <div className="settings">
             <Settings />
           </div>
-          <h1>{this.getDateTime()}</h1>
+          <h1>{this.getDate()}</h1>
           <div className="calendar">
             <Calendar />
           </div>
@@ -22,11 +34,9 @@ class Page extends React.Component {
 
         <style jsx>{`
           .settings {
-            float: left;
           }
 
           .calendar {
-            float: right;
           }
 
           h1 {
@@ -37,10 +47,11 @@ class Page extends React.Component {
           }
 
           nav {
-            padding-bottom: 1rem;
-            padding-top: 1rem;
+            padding: 1rem;
             border-bottom: solid 1px;
-            border-color: lightslategray;
+            border-color: #605f5e;
+            display: flex;
+            justify-content: space-between;
           }
         `}</style>
       </React.Fragment>

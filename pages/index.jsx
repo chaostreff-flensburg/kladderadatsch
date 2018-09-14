@@ -12,6 +12,7 @@ class Page extends React.Component {
         <style jsx global>{`
           body {
             margin: 0;
+            color: #605f5e;
           }
         `}</style>
       </React.Fragment>
