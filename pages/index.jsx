@@ -14,11 +14,8 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
     resetServerContext();
-<<<<<<< HEAD
     return {};
-=======
     this.state = {};
->>>>>>> e094997d2afbd7d327b2c19dc45e029e4318e77b
   }
 
   componentDidMount = () => {
