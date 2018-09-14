@@ -23,22 +23,12 @@ class Page extends React.Component {
     return (
       <React.Fragment>
         <nav>
-          <div className="settings">
-            <Settings />
-          </div>
+          <Settings />
           <h1>{this.getDate()}</h1>
-          <div className="calendar">
-            <Calendar />
-          </div>
+          <Calendar />
         </nav>
 
         <style jsx>{`
-          .settings {
-          }
-
-          .calendar {
-          }
-
           h1 {
             font-size: 20px;
             font-family: sans-serif;
