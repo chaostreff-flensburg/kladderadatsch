@@ -1,6 +1,5 @@
 import React from "react";
-import { Settings } from "react-feather";
-import { Calendar } from "react-feather";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import Navigation from "../components/Navigation";
 
 class Page extends React.Component {
@@ -8,7 +7,25 @@ class Page extends React.Component {
     return (
       <React.Fragment>
         <Navigation />
-        {/* Global style for body etc. */}
+        <DragDropContext>
+          <Droppable droppableId="tasklist">
+            {(provided, snapshot) => (
+              <main ref={provided.innerRef} {...provided.droppableProps}>
+                <Draggable draggableId="draggable-1">
+                  {(provided, snapshot) => (
+                    <h4
+                      ref={provided.innerRef}
+                      {...provided.draggableProps}
+                      {...provided.dragHandleProps}
+                    >
+                      My draggable
+                    </h4>
+                  )}
+                </Draggable>
+              </main>
+            )}
+          </Droppable>
+        </DragDropContext>
         <style jsx global>{`
           body {
             margin: 0;
