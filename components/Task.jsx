@@ -7,9 +7,16 @@ class Task extends React.Component {
   };
 
   render() {
+    const { provided, innerref } = this.props;
     return (
       <React.Fragment>
-        <li>{this.props.title}</li>
+        <li
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+          ref={innerref}
+        >
+          {this.props.title}
+        </li>
 
         <style jsx>{`
           li {
