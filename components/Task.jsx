@@ -11,13 +11,7 @@ class Task extends React.Component {
       <React.Fragment>
         <li>{this.props.title}</li>
 
-        {/* Global style for body etc. */}
         <style jsx>{`
-          ul {
-            width: 80%;
-            margin: 0 auto;
-          }
-
           li {
             list-style: none;
             padding-top: 0.5rem;

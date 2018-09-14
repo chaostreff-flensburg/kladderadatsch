@@ -21,7 +21,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <header>
         <nav>
           <Settings />
           <h1>{this.getDate()}</h1>
@@ -44,7 +44,7 @@ class Navigation extends React.Component {
             justify-content: space-between;
           }
         `}</style>
-      </React.Fragment>
+      </header>
     );
   }
 }
