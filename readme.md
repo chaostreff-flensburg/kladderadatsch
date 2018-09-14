@@ -2,6 +2,125 @@
 
 ![build status](https://drone.ctfl.space/api/badges/chaostreff-flensburg/kladderadatsch/status.svg)
 
+HealthHack > Kiel2018 > [home](https://git.eu-de.bluemix.net/healthhack/kiel2018/00-landing/wikis/home)
+
+# Kladderadatsch - Let’s mok die shiet!
+
+
+## Bestehende Teammitglieder:
+
+* **Samuel Brinkmann**
+* Thorben Dittmar
+* Flemming Petersen
+* Lana Hedinger (Texte, ...)
+
+Team Channel on [Slack](https://bluehc.slack.com/messages/CCTR63RS9/)
+
+
+## Idee / Challenge
+
+
+### Hintergrund
+Rund 5,2 Prozent der Deutschen leiden an Depressionen (Schätzung der WHO, 2017). <br>
+Das sind 4,2 Millionen Menschen in Deutschland. <br>
+Die Krankheit kann jeden treffen, egal welches Alter, oder Geschlecht. <br>
+Ein Grundschulkind kann genauso betroffen sein wie ein Bänker oder eine Beamtin.
+Die Deutsche Depressionshilfe spricht gar von einer "Volkskrankheit" und berichtet: Jeder fünfte Bundesbürger erkrankt ein Mal im Leben an einer Depression.
+
+Eine Depression muss dabei nicht immer von Suizidalität begleitet sein. Unangemessene Schuldgefühle, Appetitlosigkeit, Schlafstörungen, Isolation bis hin zu Störungen von Körperfunktionen können Symptome einer Depression sein und sind keine vorübergehende Phase.
+
+Wir überlassen der Therapie den bereits entwickelten Apps wie "Deprexis", "MoodGym" und den professionellen Anlaufstellen und beschäftigen uns anstelle dessen mit einer aktuellen Lücke des Markts: <br>
+**eine stimmungsbasierte To-Do Web-App.**
+
+### Das Problem
+Tiefphasen und depressive Episoden zerbrechen häufig Tagesroutinen und Betroffene leiden unter verminderter Energie und Lustlosigkeit.
+Es fällt je nach Phase schwer unterschiedliche Arten von Aufgaben auszuführen.
+Das beginnt beim Öffnen der Post und geht bis hin zu der Erfüllung von Grundbedürfnissen wie Nahrungsaufnahme oder dem Putzen der Zähne.
+Wenn bereits das Verlassen des Bettes oder das Nehmen einer Dusche zur enormen Ansträngung wird, ist es umso verständlicher, dass die Energie der Betroffenen bereits nach wenigen Aufgaben erschöpft ist.
+Herkömmliche To-Do Apps sind nicht auf diese Grundsätze ausgelegt.
+
+Öffnet man eine übliche Erinnerungs-App werden alle Aufgaben auf einen Blick angezeigt.
+Was für Übersicht Sorgen soll, ist für an Depression Erkrankte häufig eine Erschlagung und sorgt dafür, dass Erinnerungs-Apps Druck ausüben. Gerade in Phasen mit wenig Energie erscheint das Abarbeiten der Liste als unerreichbar und demotivierend. Eingeschüchtert wird die App mit einem negativen Gefühl geschlossen und Aufgaben bleiben unbearbeitet.
+Im schlimmsten Fall kann eine nicht hilfreiche App weitere Ängste schüren und den Pessimismus verstärken.
+
+### Idee
+Es soll eine Web-App geschaffen werden, welche durch einen Individualisierungsprozess die Prioritäten und benötigte Anstrengungen der Aufgaben einer Woche des Users abbildet.
+
+Bei jeder Nutzung werden die aktuellen Kraftreserven des Users abgefragt und die To-Do Liste entsprechend angepasst.
+So sollen jeden Tag nur machbare To-Do Listen erstellt werden, wodurch man auch an schlechten Tagen Erfolgsgefühle erreichen kann.
+Des Weiteren können Zusatz-Features eingefügt werden, welche Spezial-Aufgaben bei bestimmten Events auslösen, oder beispielsweise in sehr langen Negativ-Phasen Notfalleinrichtungen in der Umgebung empfehlen.
+
+Aus den gesammelten Daten können Übersichten gewonnen werden, welche Aufgaben ausgeführt oder nicht ausgeführt werden. So kann die App warnen, wenn die Post oder Rechnungen schon länger nicht mehr bearbeitet wurden oder Informationen für Therapeuten bieten. Auch die einzelnen Gemütszustände und ihre Häufigkeit können von Interesse sein.
+
+Unser Ziel ist es, dass Betroffene durch tägliche Benutzung eine Routine aufbauen, ihre Aufgaben im Überblick behalten können und Ihnen so das Leben erleichtert und eine Genesung unterstützt wird.
+
+
+## Ergebnis des Hackathons (Creativity / Deliverable)
+
+Wir können stolz verkündigen, dass dieses Projekt ein 100%iges HealthHackKiel Baby ist.
+Angereist ohne Idee entstand das Projekt am Donnerstagabend ohne Vorbereitung bei einer Flasche Flens und einer Unterhaltung über mentale Gesundheit.
+Absolut inspiriert und motiviert von unserer Idee bezogen wir unseren Arbeitsplatz und haben seit dem kein Auge mehr zugetan.
+
+### Der Name
+**Klad­de­ra­datsch, der** <br>
+*Wortart: Substantiv, maskulin* <br>
+*Gebrauch: umgangssprachlich* <br>
+*Bedeutungsübersicht: Chaos, heilloses Durcheinander nach einem Zusammenbruch*
+
+Nach depressiven Phasen, welche auch über längere Zeiträume gehen können, stehen Betroffene häufig vor einem Scherbenhaufen.
+Durch nicht erfüllte Aufgaben und aufgestaute Terminen kommt es zu nicht bezahlten Rechnungen, abgelaufenen Fristen, oder an der Tür klopfenden Inkasso Unternehmen.
+Es kommt zu einem wie wir in Norddeutschland sagen "Kladderadatsch".
+
+Damit die Zeit in welchen dem User Energiereserven zur Verfügung stehen optimal genutzt werden kann, ohne dass es sofort zu einem Überlauf an Aufgaben kommt, wurde diese Web-App entwickelt.
+
+
+## Nutzen für die Anwender (Applicability / Usability)
+
+Zusammen mit der App kann für die User eine Routine aufgebaut und, durch Unterstützung der App, auch in Tiefphasen beibehalten werden.
+Bei langfristiger Nutzung können auch Prioritäten und Einteilungen für ein best mögliches Ergebnis optimiert werden.
+Der Nutzen für die Anwender teilt sich in drei Phasen ein:
+1) <u>Die Hochphase: </u> <br>
+    In einer Hochphase stehen dem Körper besonders viele Energiereserven zu Verfügung. Die App kann optimiert und neu eingestellt werden. Sie dient in diesem Status als eine normale To-Do App. Aufgestaute Aufgaben können abgearbeitet werden.
+2) <u>Die Normal bis Niedrigphase:</u> <br>
+    In einer Niedrigphase können mittlere Aufgaben übernommen werden. Es wird darauf geachtet, dass wichtige Aufgaben erledigt werden.
+3) <u>Die Tiefphase:</u> <br>
+    In einer Tiefphase werden alle überflüssigen Aufgaben ausgeblendet. Es werden Basis-Aufgaben im Bereich regelmäßige Ernährung und Hygiene angezeigt.
+    
+Ein aufgebauter Tagesablauf ist häufig der erste Ansatz in der Therapie um eine stabile Basis zu schaffen.
+Fällt die betroffene Person langsam in eine Tiefphase, soll die App diese nach Möglichkeit abschwächen.
+Diese App ersetzt keine Therapie und keinen Ansprechpartner, aber sie erleichtert den allgemeinen Tagesablauf, der bei von Depressionen Betroffenen zum eigenen Feind wird.
+
+
+
+## Geschäftspotential (Business Potential / Feasibility)
+
+...
+
+
+## Wie wird das Preisgeld verwendet?
+
+...
+
+
+## Ready for the show (Livedemo / Video / Presentation)
+* [unsere Demo](https://demo.eu-de.mybluemix.net)
+* [unser Video](https://drive.google.com/...)
+* [unsere coole Präsi](https://box.com/...)
+
+
+## Was steckt in der Lösung (Architecture / Technology)
+
+* [Architekturskizze](https://box.com/...)
+* Verwendete Cloud Services (IBM oder andere)
+  * Runtime: ... (z.B. CloudFoundry Node.js / Kubernetes)
+  * Storage: ... (z.B. CouchDB, MongoDB, Postgres, Cloud Object Storage)
+  * Liste sonstiger Services: ...
+* (Wiederverwendung) vorhandenen OpenSource / ClosedSource Komponenten:
+  * ...
+  * ...
+
+
+
 <!-- @ToDo: Inline About Section -->
 
 ## Deployment
