@@ -6,10 +6,10 @@ class Slider extends React.Component {
     this.state = { sliderValue: null };
 
     // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
+    this.sliderChange = this.sliderChange.bind(this);
   }
 
-  handleClick() {
+  sliderChange() {
     var sliderState = document.getElementById("slider").value;
     console.log(sliderState);
     this.setState(state => ({
@@ -22,7 +22,7 @@ class Slider extends React.Component {
       <React.Fragment>
         <input
           id="slider"
-          onChange={this.handleClick}
+          onChange={this.sliderChange}
           type="range"
           min="0"
           max="360"
@@ -30,7 +30,7 @@ class Slider extends React.Component {
         />
 
         <style jsx>{`
-          input {
+          input[type="range"] {
             width: 100%;
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -38,18 +38,18 @@ class Slider extends React.Component {
             position: relative;
           }
 
-          input::before,
-          input::after {
+          input[type="range"]::before,
+          input[type="range"]::after {
             position: absolute;
             top: 0;
           }
 
-          input::before {
+          input[type="range"]::before {
             content: "-";
             left: 0;
           }
 
-          input::after {
+          input[type="range"]::after {
             content: "+";
             right: 0;
           }
