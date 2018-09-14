@@ -1,11 +1,14 @@
 import React from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { Settings } from "react-feather";
+import { Calendar } from "react-feather";
+import Navigation from "../components/Navigation";
 
 class Page extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Hello Kladderadatsch!</h1>
+        <Navigation />
         <DragDropContext>
           <Droppable droppableId="tasklist">
             {(provided, snapshot) => (
@@ -25,9 +28,10 @@ class Page extends React.Component {
             )}
           </Droppable>
         </DragDropContext>
-        <style jsx>{`
-          h1 {
-            font-family: sans-serif;
+        <style jsx global>{`
+          body {
+            margin: 0;
+            color: #605f5e;
           }
         `}</style>
       </React.Fragment>
