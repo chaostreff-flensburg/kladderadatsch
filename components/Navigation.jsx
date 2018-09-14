@@ -2,7 +2,7 @@ import React from "react";
 import { Settings } from "react-feather";
 import { Calendar } from "react-feather";
 
-class Page extends React.Component {
+class Navigation extends React.Component {
   getDate = () => {
     var dateTime = new Date();
     var weekdays = [
@@ -49,4 +49,4 @@ class Page extends React.Component {
   }
 }
 
-export default Page;
+export default Navigation;
