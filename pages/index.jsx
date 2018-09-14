@@ -47,13 +47,10 @@ class Page extends React.Component {
               )}
             </Droppable>
           </DragDropContext>
-<<<<<<< HEAD
           <section className="energy-slider">
             <Energyheadline />
             <Slider />
           </section>
-=======
->>>>>>> fa55ee6312dd706681cea21a5258b5a39e90c040
         </main>
 
         <Energyheadline />
