@@ -1,6 +1,4 @@
 import React from "react";
-import { Settings } from "react-feather";
-import { Calendar } from "react-feather";
 import Navigation from "../components/Navigation";
 
 class Page extends React.Component {
