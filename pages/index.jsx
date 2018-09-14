@@ -13,7 +13,7 @@ class Page extends React.Component {
           <ul>
             <Task color="123" title="Beispiel task" />
           </ul>
-          <Slider />
+
           {/* Global style for body etc. */}
           <DragDropContext>
             <Droppable droppableId="tasklist">
@@ -34,6 +34,7 @@ class Page extends React.Component {
               )}
             </Droppable>
           </DragDropContext>
+          <Slider />
         </main>
 
         <style jsx>{`

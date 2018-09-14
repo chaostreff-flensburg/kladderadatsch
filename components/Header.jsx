@@ -16,7 +16,7 @@ class Navigation extends React.Component {
     ];
     var weekday = dateTime.getDay();
     var day = dateTime.getDate() + "." + dateTime.getMonth();
-    return weekdays[weekday] + " " + day;
+    return weekdays[weekday - 1] + " " + day;
   };
 
   render() {

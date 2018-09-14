@@ -26,7 +26,7 @@ class Task extends React.Component {
             position: absolute;
             height: 10px;
             width: 10px;
-            background-color: ${"hsl(" + this.props.color != undefined ? this.props.color : this.getRandomColor() + ", 69%, 67%)"};
+            background-color: ${"hsl(" + this.props.color + ", 69%, 67%)"};
             border-radius: 50%;
             top: 35%;
             left: 0;
