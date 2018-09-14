@@ -1,5 +1,5 @@
 import React from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable, resetServerContext } from "react-beautiful-dnd";
 
 import Header from "../components/Header";
 import Task from "../components/Task";
@@ -7,6 +7,11 @@ import Slider from "../components/Slider";
 import Energyheadline from "../components/Energyheadline";
 
 class Page extends React.Component {
+  static async getInitialProps({ req }) {
+    resetServerContext();
+    return {}
+  };
+
   componentDidMount = () => {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js");
