@@ -53,9 +53,6 @@ class Page extends React.Component {
           </section>
         </main>
 
-        <Energyheadline />
-        <Slider />
-
         <style jsx>{`
           ul {
             padding-left: 0;
