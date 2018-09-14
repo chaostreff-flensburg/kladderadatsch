@@ -4,12 +4,18 @@ import Task from "../components/Task";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 class Page extends React.Component {
+  componentDidMount = () => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  };
+
   render() {
     return (
       <React.Fragment>
         <Navigation />
         <ul>
-          <Task color="123" title="Beispiel task"/>
+          <Task color="123" title="Beispiel task" />
         </ul>
         {/* Global style for body etc. */}
         <DragDropContext>
