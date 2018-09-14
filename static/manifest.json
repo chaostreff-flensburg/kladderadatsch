@@ -1,7 +1,7 @@
 {
   "name": "Kladderadatsch",
   "short_name": "Kladdera",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#fff",
   "background_color": "#fff",
