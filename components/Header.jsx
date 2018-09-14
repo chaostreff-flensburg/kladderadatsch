@@ -38,7 +38,7 @@ class Navigation extends React.Component {
         <style jsx>{`
           h1 {
             font-size: 20px;
-            font-family: sans-serif;
+            font-family: "Roboto", sans-serif;
             margin: 0;
             display: inline;
             position: relative;

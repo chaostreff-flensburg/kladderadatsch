@@ -11,6 +11,7 @@ class Energyheadline extends React.Component {
             display: block;
             text-align: center;
             font-size: 18px;
+            font-family: "Roboto", sans-serif;
             margin: 0;
           }
         `}</style>

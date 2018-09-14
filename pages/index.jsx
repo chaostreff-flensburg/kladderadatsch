@@ -55,6 +55,7 @@ class Page extends React.Component {
           body {
             margin: 0;
             color: #605f5e;
+            font-family: "Open Sans Condensed", sans-serif;
           }
           main {
             width: 80%;

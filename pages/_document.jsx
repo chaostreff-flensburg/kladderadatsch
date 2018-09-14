@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta name="Description" content="Mood based Task Tracking."></meta>
           <link rel="icon" type="image/png" href="/static/icon-512.png" />
-
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet"></link>
           <link rel="manifest" href="/static/manifest.json"></link>
         </Head>
         <body>
