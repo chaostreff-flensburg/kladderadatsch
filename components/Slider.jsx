@@ -60,6 +60,7 @@ class Slider extends React.Component {
           input[type="range"]::after {
             position: absolute;
             top: 0;
+            font-size: 16px;
           }
 
           input[type="range"]::before {
