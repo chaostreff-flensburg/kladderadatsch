@@ -1,5 +1,10 @@
 import React from "react";
-import { DragDropContext, Droppable, Draggable, resetServerContext } from "react-beautiful-dnd";
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
+  resetServerContext
+} from "react-beautiful-dnd";
 
 import Header from "../components/Header";
 import Task from "../components/Task";
@@ -8,8 +13,8 @@ import Slider from "../components/Slider";
 class Page extends React.Component {
   static async getInitialProps({ req }) {
     resetServerContext();
-    return {}
-  };
+    return {};
+  }
 
   componentDidMount = () => {
     if ("serviceWorker" in navigator) {
@@ -47,6 +52,126 @@ class Page extends React.Component {
                       />
                     )}
                   </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
                 </ul>
               )}
             </Droppable>
@@ -62,10 +187,12 @@ class Page extends React.Component {
           }
 
           .energy-slider {
-            position: absolute;
+            position: fixed;
             bottom: 0;
-            left: 10%;
-            right: 10%;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 6px 20px 0px black;
           }
         `}</style>
 
@@ -73,11 +200,16 @@ class Page extends React.Component {
           body {
             margin: 0;
             color: #605f5e;
-            font-family: "Open Sans Condensed", sans-serif;
+            font-family: "Roboto", sans-serif;
           }
           main {
             width: 80%;
             margin: 0 auto;
+          }
+
+          ul {
+            margin-top: 100px;
+            margin-bottom: 100px;
           }
 
           li {
