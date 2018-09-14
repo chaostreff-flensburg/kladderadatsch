@@ -23,7 +23,7 @@ class Navigation extends React.Component {
     return (
       <header>
         <nav>
-          <figure className="calendar-mark">
+          <figure>
             <span>
               <Settings />
             </span>
@@ -35,7 +35,7 @@ class Navigation extends React.Component {
             <figcaption className="title">Kladderadatsch</figcaption>
           </figure>
 
-          <figure className="calendar-mark">
+          <figure>
             <span>
               <Calendar />
             </span>
@@ -47,12 +47,6 @@ class Navigation extends React.Component {
           .title {
             font-size: 20px;
             display: none;
-          }
-
-          @media screen and (min-width: 450px) {
-            .title {
-              display: inherit;
-            }
           }
 
           header {
@@ -84,10 +78,21 @@ class Navigation extends React.Component {
           }
 
           .logo {
-            width: 30px;
-            height: 30px;
+            width: 45px;
+            height: 45px;
             margin-left: 50%;
             transform: translateX(-50%);
+          }
+
+          @media screen and (min-width: 450px) {
+            .title {
+              display: inherit;
+            }
+
+            .logo {
+              width: 30px;
+              height: 30px;
+            }
           }
         `}</style>
       </header>
