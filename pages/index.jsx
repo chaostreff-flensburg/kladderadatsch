@@ -28,13 +28,17 @@ class Page extends React.Component {
     }
   };
 
+  onDragEnd = result => {
+    console.log(result);
+  };
+
   render() {
     return (
       <React.Fragment>
         <Header />
 
         <main>
-          <DragDropContext>
+          <DragDropContext onDragEnd={this.onDragEnd}>
             <Droppable droppableId="tasklist">
               {(provided, snapshot) => (
                 <ul ref={provided.innerRef} {...provided.droppableProps}>
