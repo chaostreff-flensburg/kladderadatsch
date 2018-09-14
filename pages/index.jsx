@@ -14,7 +14,12 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
     resetServerContext();
-    this.state = {};
+    this.state = {
+      tasks: [
+        { id: "nanoid-1337", title: "Beispiel Task", color: "123" },
+        { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" }
+      ]
+    };
   }
 
   componentDidMount = () => {
@@ -33,26 +38,20 @@ class Page extends React.Component {
             <Droppable droppableId="tasklist">
               {(provided, snapshot) => (
                 <ul ref={provided.innerRef} {...provided.droppableProps}>
-                  <Draggable draggableId="draggable-1">
-                    {(provided, snapshot) => (
-                      <Task
-                        color={"123"}
-                        title={"Beispiel task"}
-                        innerref={provided.innerRef}
-                        provided={provided}
-                      />
-                    )}
-                  </Draggable>
-                  <Draggable draggableId="draggable-2">
-                    {(provided, snapshot) => (
-                      <Task
-                        color={"321"}
-                        title={"Beispiel task 2"}
-                        innerref={provided.innerRef}
-                        provided={provided}
-                      />
-                    )}
-                  </Draggable>
+
+                  {this.state.tasks.map((task, index) => (
+                    <Draggable draggableId={task.id} index={index} key={task.id}>
+                      {(provided, snapshot) => (
+                        <Task
+                          color={task.color}
+                          title={task.title}
+                          innerref={provided.innerRef}
+                          provided={provided}
+                        />
+                      )}
+                    </Draggable>
+                  ))}
+
                 </ul>
               )}
             </Droppable>
