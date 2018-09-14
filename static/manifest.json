@@ -1,0 +1,11 @@
+{
+  "name": "Kladderadatsch",
+  "short_name": "Kladdera",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "description": "Mood based Task Tracking.",
+  "lang": "de",
+  "orientation": "portrait"
+}
