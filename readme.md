@@ -104,8 +104,8 @@ Gerade die zweite Möglichkeit würde eine langfristige Weiterentwicklung, weite
 
 ## Wie wird das Preisgeld verwendet?
 
-...
-
+Siehe den Punkt: Buisness Case.
+Wir wollen alle Preisgelder in die Weiterentwicklung und Verbreitung der Anwendung stecken. 
 
 ## Ready for the show (Livedemo / Video / Presentation)
 * [unsere Demo](https://demo.eu-de.mybluemix.net)
