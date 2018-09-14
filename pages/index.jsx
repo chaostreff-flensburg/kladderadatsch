@@ -1,7 +1,5 @@
 import React from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { Settings } from "react-feather";
-import { Calendar } from "react-feather";
 import Navigation from "../components/Navigation";
 
 class Page extends React.Component {
