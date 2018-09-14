@@ -3,14 +3,14 @@
 ![build status](https://drone.ctfl.space/api/badges/chaostreff-flensburg/kladderadatsch/status.svg)
 
 # Kladderadatsch - Let’s mok die shiet!
-
+Guided Self Help for people with depression
 
 ## Bestehende Teammitglieder:
 
-* **Samuel Brinkmann**
-* Thorben Dittmar
-* Flemming Petersen
-* Lana Hedinger (Texte, ...)
+* **Samuel Brinkmann (Softwarenetcklung, Texte)**
+* Thorben Dittmar (Softwareentwicklung, Logo)
+* Flemming Petersen (Softwareentwicklung)
+* Lana Hedinger (Texte, Research, Softwareentwicklung)
 
 Team Channel on [Slack](https://bluehc.slack.com/messages/CCTR63RS9/)
 
@@ -41,6 +41,10 @@ Herkömmliche To-Do Apps sind nicht auf diese Grundsätze ausgelegt.
 Was für Übersicht Sorgen soll, ist für an Depression Erkrankte häufig eine Erschlagung und sorgt dafür, dass Erinnerungs-Apps Druck ausüben. Gerade in Phasen mit wenig Energie erscheint das Abarbeiten der Liste als unerreichbar und demotivierend. Eingeschüchtert wird die App mit einem negativen Gefühl geschlossen und Aufgaben bleiben unbearbeitet.
 Im schlimmsten Fall kann eine nicht hilfreiche App weitere Ängste schüren und den Pessimismus verstärken.
 
+Depressionen sind zudem ein großer Kostenfaktor für Unternehmen. Die WHO geht davon aus dass 2030 der Häufigste Krankheitsgrund werden wird.
+"Die direkten und indirekten Kosten, die Depression jährlich verursacht, liegen in Deutschland zwischen 15,5 und 22 Milliarden Euro. Allein zwischen 2002 und 2008 sind die direkten Krankheitskosten um ein Drittel auf 5,2 Milliarden Euro gestiegen." (1)
+Das Zitat stammt aus 2011. Seit dem steigen die Kosten kontinuierlich an.
+
 ### Idee
 Es soll eine Web-App geschaffen werden, welche durch einen Individualisierungsprozess die Prioritäten und benötigte Anstrengungen der Aufgaben einer Woche des Users abbildet.
 
@@ -60,7 +64,7 @@ Angereist ohne Idee entstand das Projekt am Donnerstagabend ohne Vorbereitung be
 Absolut inspiriert und motiviert von unserer Idee bezogen wir unseren Arbeitsplatz und haben seit dem kein Auge mehr zugetan.
 
 ### Der Name
-**Klad­de­ra­datsch, der** <br>
+**Klad|de|ra|datsch, der** <br>
 *Wortart: Substantiv, maskulin* <br>
 *Gebrauch: umgangssprachlich* <br>
 *Bedeutungsübersicht: Chaos, heilloses Durcheinander nach einem Zusammenbruch*
@@ -71,24 +75,19 @@ Es kommt zu einem wie wir in Norddeutschland sagen "Kladderadatsch".
 
 Damit die Zeit in welchen dem User Energiereserven zur Verfügung stehen optimal genutzt werden kann, ohne dass es sofort zu einem Überlauf an Aufgaben kommt, wurde diese Web-App entwickelt.
 
+### Das Logo
+Bei dem App Design halten wir es schlicht mit simplen Farben und Symbolik.
+Der Kern des Logos ist ein Zeichen, welches sowohl als Haken einer To-Do-Liste, als auch als K für "Kladderadatsch" gelesen werden kann.
+
+### Die App
+Visuelle Analogskala um subjektive Wahrnehmung zu quantifizieren
 
 ## Nutzen für die Anwender (Applicability / Usability)
+In der Nationalen Versorgungsleitlinie für Unipolare Depressionen von 2017 wurden mehrere Therapiegrundpfeiler formuliert. Stärken der eigenen Ressourcen und Einbezug von Angehörigen zählen zu den wichtigsten nicht-medikamentösen Therapiezielen, um eine Wiedereingliederung ins Sozial- und Arbeitsleben zu erreichen.
+Grade der Lerneffekt der positiven Verstärkung durch Erreichen konkreter Ziele spielt dabei eine entscheidende Rolle in Kognitiven Verhaltenstherapie und interpersonellen Psychotherapieansätzen.
+Mit dieser App wollen wir Menschen bei der Formulierung konkreter und erreichbarer Ziele unterstützen, um zum Wiedergewinnen von Erfolgserlebnissen beizutragen.
 
-Zusammen mit der App kann für die User eine Routine aufgebaut und, durch Unterstützung der App, auch in Tiefphasen beibehalten werden.
-Bei langfristiger Nutzung können auch Prioritäten und Einteilungen für ein best mögliches Ergebnis optimiert werden.
-Der Nutzen für die Anwender teilt sich in drei Phasen ein:
-1) <u>Die Hochphase: </u> <br>
-    In einer Hochphase stehen dem Körper besonders viele Energiereserven zu Verfügung. Die App kann optimiert und neu eingestellt werden. Sie dient in diesem Status als eine normale To-Do App. Aufgestaute Aufgaben können abgearbeitet werden.
-2) <u>Die Normal bis Niedrigphase:</u> <br>
-    In einer Niedrigphase können mittlere Aufgaben übernommen werden. Es wird darauf geachtet, dass wichtige Aufgaben erledigt werden.
-3) <u>Die Tiefphase:</u> <br>
-    In einer Tiefphase werden alle überflüssigen Aufgaben ausgeblendet. Es werden Basis-Aufgaben im Bereich regelmäßige Ernährung und Hygiene angezeigt.
-    
-Ein aufgebauter Tagesablauf ist häufig der erste Ansatz in der Therapie um eine stabile Basis zu schaffen.
-Fällt die betroffene Person langsam in eine Tiefphase, soll die App diese nach Möglichkeit abschwächen.
-Diese App ersetzt keine Therapie und keinen Ansprechpartner, aber sie erleichtert den allgemeinen Tagesablauf, der bei von Depressionen Betroffenen zum eigenen Feind wird.
-
-
+Sportliche Aktivitäten und kleine gesetzte Ziel wie in der Patientenleitlinie (Version 2, 2016) als gute Unterstützung zu einer bereits begonnen Behandlung angegeben sind, werden in der App durch die kleinen Aufgaben in den Tagesablauf integriert um die Genesung zu beschleunigen.
 
 # Buisness Case
 Dank unserer Serverless Software Solution ist die fertig entwickelte Anwendung, äußerst Kostensparend im laufenden Betrieb. Die entstehenden Kosten durch Server&Domain werden durch die Entwickler⋆innen bezahlt.
@@ -123,6 +122,7 @@ Die ganze Anwendung ist als [Progessive Web App (PWA)](https://developers.google
 Aus Datenschutzgründen und Gründen der geringen Entwicklungszeit, werden alle Daten Lokal gespeichert (Local Storage). So wird Datenmissbrauch effektiv vorgebeugt und Datenschutzrichtlinien effektiv umgesetzt.
 
 
+(1) https://www.allianz.com/de/presse/news/studien/news_2011-04-13.html/
 
 
 <!-- @ToDo: Inline About Section -->
