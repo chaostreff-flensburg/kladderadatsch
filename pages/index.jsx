@@ -17,7 +17,8 @@ class Page extends React.Component {
     this.state = {
       tasks: [
         { id: "nanoid-1337", title: "Beispiel Task", color: "123" },
-        { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" }
+        { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" },
+        { id: "nanoid-0000", title: "Beispiel Task 3", color: "220" }
       ]
     };
   }
@@ -29,7 +30,11 @@ class Page extends React.Component {
   };
 
   onDragEnd = result => {
-    console.log(result);
+    let movedTask = this.state.tasks[result.source.index];
+    let newTaskArray = this.state.tasks;
+    newTaskArray.splice(result.source.index, 1);
+    newTaskArray.splice(result.destination.index, 0, movedTask);
+    this.setState({ tasks: newTaskArray });
   };
 
   render() {
@@ -42,9 +47,12 @@ class Page extends React.Component {
             <Droppable droppableId="tasklist">
               {(provided, snapshot) => (
                 <ul ref={provided.innerRef} {...provided.droppableProps}>
-
                   {this.state.tasks.map((task, index) => (
-                    <Draggable draggableId={task.id} index={index} key={task.id}>
+                    <Draggable
+                      draggableId={task.id}
+                      index={index}
+                      key={task.id}
+                    >
                       {(provided, snapshot) => (
                         <Task
                           color={task.color}
@@ -55,7 +63,6 @@ class Page extends React.Component {
                       )}
                     </Draggable>
                   ))}
-
                 </ul>
               )}
             </Droppable>
