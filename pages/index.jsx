@@ -41,13 +41,22 @@ class Page extends React.Component {
               )}
             </Droppable>
           </DragDropContext>
-          <Energyheadline />
-          <Slider />
+          <section className="energy-slider">
+            <Energyheadline />
+            <Slider />
+          </section>
         </main>
 
         <style jsx>{`
           ul {
             padding-left: 0;
+          }
+
+          .energy-slider {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
           }
         `}</style>
 
