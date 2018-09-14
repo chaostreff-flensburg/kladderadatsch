@@ -1,15 +1,21 @@
 import React from "react";
-import { DragDropContext, Droppable, Draggable, resetServerContext } from "react-beautiful-dnd";
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
+  resetServerContext
+} from "react-beautiful-dnd";
 
 import Header from "../components/Header";
 import Task from "../components/Task";
 import Slider from "../components/Slider";
 
 class Page extends React.Component {
-  static async getInitialProps({ req }) {
+  constructor(props) {
+    super(props);
     resetServerContext();
-    return {}
-  };
+    this.state = {};
+  }
 
   componentDidMount = () => {
     if ("serviceWorker" in navigator) {
