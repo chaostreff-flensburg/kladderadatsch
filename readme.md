@@ -92,9 +92,14 @@ Diese App ersetzt keine Therapie und keinen Ansprechpartner, aber sie erleichter
 
 
 
-## Geschäftspotential (Business Potential / Feasibility)
+# Buisness Case
+Dank unserer Serverless Software Solution ist die fertig entwickelte Anwendung, äußerst Kostensparend im laufenden Betrieb. Die entstehenden Kosten durch Server&Domain werden durch die Entwickler⋆innen bezahlt.
+Für die weitere Entwicklung sehen wir zwei Möglichkeiten.
+1) Die Anwendung wir nach dem Open Source Prinzip zusammen mit einer Community weiter entwickelt. Die nötigen Kosten durch Domain, Server und Entwickler Ausgaben werden durch Spenden gedeckt. Möglicher rechtlicher Träger könnte der gemeinnützige Chaostreff Flensburg e.V. sein. 
+2) Die App wird am Anfang durch Preisgelder (vom E-Health-Hackathon) oder Initiativen wie des Prototyp Funds https://prototypefund.de/en/ weiter entwickelt. Wenn der Anfang Finanzierung gesichert ist wollen wir eine gemeinnützige Gesellschaft, als Träger gründen (gGmbH/gUG). Als nächsten Schritt suchen wir langfristige Finanzelle Partner wie Vereine (Deutsche DepressionsLiga e.V.) , Stiftungen (Stiftung Deutsche Depressionshilfe), Krankenhäusern aber vor allem Krankenkassen.
 
-...
+Gerade die zweite Möglichkeit würde eine langfristige Weiterentwicklung, weitere Verbreitung und erhöhte Qualität der Anwendung sicherstellen. Bei beiden Möglichkeiten steht die Anwendung frei zu Verfügung und kann so möglichst vielen Menschen helfen. Auch können bei einer OpenSource Variante durch den freien Zugang Betroffene, Experten und Interessenten an der App weiter entwickeln.
+
 
 
 ## Wie wird das Preisgeld verwendet?
@@ -111,13 +116,14 @@ Diese App ersetzt keine Therapie und keinen Ansprechpartner, aber sie erleichter
 ## Was steckt in der Lösung (Architecture / Technology)
 
 * [Architekturskizze](https://box.com/...)
-* Verwendete Cloud Services (IBM oder andere)
-  * Runtime: ... (z.B. CloudFoundry Node.js / Kubernetes)
-  * Storage: ... (z.B. CouchDB, MongoDB, Postgres, Cloud Object Storage)
-  * Liste sonstiger Services: ...
-* (Wiederverwendung) vorhandenen OpenSource / ClosedSource Komponenten:
-  * ...
-  * ...
+  * Runtime: JavaScript/React.js
+  * Storage: Local Storage
+  * Liste sonstiger Services: ServiceWorker, Next.Js, CodeStyles: Prettier
+  
+### Die Technik
+Die ganze Anwendung ist als [Progessive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) und Mobile First geplant. Technisch wird dieses mit Javascript und dem Framework [React.js](https://en.wikipedia.org/wiki/React_(JavaScript_library)) umgesetzt. Da die ganze Anwendung als PWA konzipiert ist, kombinieren wir die Vorteile einer Smartphone App und einer Anwendung, die nur im Web läuft. Sobald www.kladderadats.ch aufgerufen wird, gibt es die Möglichkeit die Anwendung zum Homescreen hinzuzufügen und auch offline zu benutzen.
+Aus Datenschutzgründen und Gründen der geringen Entwicklungszeit, werden alle Daten Lokal gespeichert (Local Storage). So wird Datenmissbrauch effektiv vorgebeugt und Datenschutzrichtlinien effektiv umgesetzt.
+
 
 
 
