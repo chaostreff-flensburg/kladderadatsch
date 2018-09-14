@@ -26,7 +26,10 @@ class Navigation extends React.Component {
           <span className="settings">
             <Settings />
           </span>
-          <h1>Kladderadatsch</h1>
+          <figure>
+            <img className="logo" src="../static/icon-512.png" alt="" />
+            <figcaption className="title">Kladderadatsch</figcaption>
+          </figure>
           <figure>
             <span className="calendar">
               <Calendar />
@@ -36,25 +39,9 @@ class Navigation extends React.Component {
         </nav>
 
         <style jsx>{`
-          h1 {
+          .title {
             font-size: 20px;
             font-family: "Roboto", sans-serif;
-            margin: 0;
-            display: inline;
-            position: relative;
-            margin-left: 74px;
-            margin-top: 10px;
-            padding-left: 5px;
-          }
-
-          h1::before {
-            content: "";
-            position: absolute;
-            background-image: url(../static/icon-512.png);
-            background-size: 25px 25px;
-            width: 25px;
-            height: 25px;
-            right: 100%;
           }
 
           figure {
@@ -77,6 +64,13 @@ class Navigation extends React.Component {
           .calendar {
             display: block;
             text-align: center;
+          }
+
+          .logo {
+            width: 30px;
+            height: 30px;
+            margin-left: 50%;
+            transform: translateX(-50%);
           }
         `}</style>
       </header>

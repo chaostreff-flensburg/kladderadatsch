@@ -21,21 +21,23 @@ class Task extends React.Component {
         <style jsx>{`
           li {
             list-style: none;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
             border-top: solid 1px #605f5e;
             position: relative;
+            font-size: 20px;
+            letter-spacing: 3px;
           }
 
           li::before {
             content: "";
             position: absolute;
-            height: 10px;
-            width: 10px;
+            height: 20px;
+            width: 20px;
             background-color: ${"hsl(" + this.props.color + ", 69%, 67%)"};
             border-radius: 50%;
-            top: 35%;
+            top: 32%;
             left: 0;
           }
 

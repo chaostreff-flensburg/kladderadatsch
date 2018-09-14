@@ -40,6 +40,7 @@ class Slider extends React.Component {
             padding-bottom: 1rem;
             margin: 0;
             position: relative;
+            cursor: pointer;
           }
 
           label {
