@@ -27,7 +27,7 @@ class Page extends React.Component {
                         {...provided.dragHandleProps}
                       >
                         My draggable
-                    </h4>
+                      </h4>
                     )}
                   </Draggable>
                 </main>
@@ -35,6 +35,13 @@ class Page extends React.Component {
             </Droppable>
           </DragDropContext>
         </main>
+
+        <style jsx>{`
+          ul {
+            padding-left: 0;
+          }
+        `}</style>
+
         <style jsx global>{`
           body {
             margin: 0;
