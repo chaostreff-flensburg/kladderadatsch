@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
           <title>Kladaradatsch</title>
           <meta name="theme-color" content="#ffffff" />
           <meta name="Description" content="Mood based Task Tracking."></meta>
+          <link rel="icon" type="image/png" href="/static/icon-512.png" />
 
           <link rel="manifest" href="/static/manifest.json"></link>
         </Head>
