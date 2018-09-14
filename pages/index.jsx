@@ -52,14 +52,22 @@ class Page extends React.Component {
               )}
             </Droppable>
           </DragDropContext>
+          <section className="energy-slider">
+            <Energyheadline />
+            <Slider />
+          </section>
         </main>
-
-        <Energyheadline />
-        <Slider />
 
         <style jsx>{`
           ul {
             padding-left: 0;
+          }
+
+          .energy-slider {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
           }
         `}</style>
 
@@ -72,6 +80,10 @@ class Page extends React.Component {
           main {
             width: 80%;
             margin: 0 auto;
+          }
+
+          li {
+            list-style-type: none;
           }
         `}</style>
       </React.Fragment>
