@@ -1,8 +1,9 @@
 import React from "react";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+
 import Header from "../components/Header";
 import Task from "../components/Task";
 import Slider from "../components/Slider";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 class Page extends React.Component {
   componentDidMount = () => {
@@ -15,33 +16,39 @@ class Page extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <main>
-          <ul>
-            <Task color="123" title="Beispiel task" />
-          </ul>
 
-          {/* Global style for body etc. */}
+        <main>
           <DragDropContext>
             <Droppable droppableId="tasklist">
               {(provided, snapshot) => (
-                <main ref={provided.innerRef} {...provided.droppableProps}>
+                <ul ref={provided.innerRef} {...provided.droppableProps}>
                   <Draggable draggableId="draggable-1">
                     {(provided, snapshot) => (
-                      <h4
-                        ref={provided.innerRef}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                      >
-                        My draggable
-                      </h4>
+                      <Task
+                        color={"123"}
+                        title={"Beispiel task"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
                     )}
                   </Draggable>
-                </main>
+                  <Draggable draggableId="draggable-2">
+                    {(provided, snapshot) => (
+                      <Task
+                        color={"321"}
+                        title={"Beispiel task 2"}
+                        innerref={provided.innerRef}
+                        provided={provided}
+                      />
+                    )}
+                  </Draggable>
+                </ul>
               )}
             </Droppable>
           </DragDropContext>
-          <Slider />
         </main>
+
+        <Slider />
 
         <style jsx>{`
           ul {
