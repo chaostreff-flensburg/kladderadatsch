@@ -34,6 +34,12 @@ class Slider extends React.Component {
 
 
         <style jsx>{`
+          form {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 1rem;
+          }
+
           input[type="range"] {
             width: 100%;
             padding-top: 1rem;
@@ -47,7 +53,6 @@ class Slider extends React.Component {
             display: block;
             text-align: center;
             font-size: 18px;
-            font-family: "Roboto", sans-serif;
             margin: 0;
           }
 

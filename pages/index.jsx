@@ -71,10 +71,12 @@ class Page extends React.Component {
           }
 
           .energy-slider {
-            position: absolute;
+            position: fixed;
             bottom: 0;
-            left: 10%;
-            right: 10%;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 6px 20px 0px black;
           }
         `}</style>
 
@@ -82,11 +84,16 @@ class Page extends React.Component {
           body {
             margin: 0;
             color: #605f5e;
-            font-family: "Open Sans Condensed", sans-serif;
+            font-family: "Roboto", sans-serif;
           }
           main {
             width: 80%;
             margin: 0 auto;
+          }
+
+          ul {
+            margin-top: 100px;
+            margin-bottom: 100px;
           }
 
           li {

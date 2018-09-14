@@ -23,15 +23,20 @@ class Navigation extends React.Component {
     return (
       <header>
         <nav>
-          <span className="settings">
-            <Settings />
-          </span>
-          <figure>
+          <figure className="calendar-mark">
+            <span>
+              <Settings />
+            </span>
+            <figcaption>Einstellungen</figcaption>
+          </figure>
+
+          <figure className="mark">
             <img className="logo" src="../static/icon-512.png" alt="" />
             <figcaption className="title">Kladderadatsch</figcaption>
           </figure>
-          <figure>
-            <span className="calendar">
+
+          <figure className="calendar-mark">
+            <span>
               <Calendar />
             </span>
             <figcaption>{this.getDate()}</figcaption>
@@ -41,7 +46,22 @@ class Navigation extends React.Component {
         <style jsx>{`
           .title {
             font-size: 20px;
-            font-family: "Roboto", sans-serif;
+            display: none;
+          }
+
+          @media screen and (min-width: 450px) {
+            .title {
+              display: inherit;
+            }
+          }
+
+          header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 100;
           }
 
           figure {
@@ -54,16 +74,13 @@ class Navigation extends React.Component {
             border-color: #605f5e;
             display: flex;
             justify-content: space-between;
-            align-items: stretch;
+            align-items: flex-end;
           }
 
-          .settings {
-            margin-top: 10px;
-          }
-
-          .calendar {
+          span {
             display: block;
             text-align: center;
+            font-size: 14px;
           }
 
           .logo {

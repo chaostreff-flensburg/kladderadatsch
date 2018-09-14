@@ -27,7 +27,7 @@ class Task extends React.Component {
             border-top: solid 1px #605f5e;
             position: relative;
             font-size: 20px;
-            letter-spacing: 3px;
+            font-weight: 300;
           }
 
           li::before {
