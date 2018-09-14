@@ -2,8 +2,6 @@
 
 ![build status](https://drone.ctfl.space/api/badges/chaostreff-flensburg/kladderadatsch/status.svg)
 
-HealthHack > Kiel2018 > [home](https://git.eu-de.bluemix.net/healthhack/kiel2018/00-landing/wikis/home)
-
 # Kladderadatsch - Let’s mok die shiet!
 
 
