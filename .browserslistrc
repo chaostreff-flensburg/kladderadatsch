@@ -1,0 +1,7 @@
+# Browsers that we support
+# Regardless of babel-target, all brwosers should recieve a readable page thanks to ssr
+
+> 0.25%
+not ie 11
+not op_mini all
+not dead
