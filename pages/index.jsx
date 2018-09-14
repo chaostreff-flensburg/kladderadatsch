@@ -4,7 +4,6 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import Header from "../components/Header";
 import Task from "../components/Task";
 import Slider from "../components/Slider";
-import Energyheadline from "../components/Energyheadline";
 
 class Page extends React.Component {
   componentDidMount = () => {
@@ -48,7 +47,6 @@ class Page extends React.Component {
             </Droppable>
           </DragDropContext>
           <section className="energy-slider">
-            <Energyheadline />
             <Slider />
           </section>
         </main>

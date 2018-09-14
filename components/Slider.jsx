@@ -20,14 +20,18 @@ class Slider extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <input
-          id="slider"
-          onChange={this.sliderChange}
-          type="range"
-          min="0"
-          max="360"
-          step="10"
-        />
+        <form>
+          <label htmlFor="slider">Energiereserve</label>
+          <input
+            id="slider"
+            onChange={this.sliderChange}
+            type="range"
+            min="0"
+            max="360"
+            step="10"
+          />
+        </form>
+
 
         <style jsx>{`
           input[type="range"] {
@@ -36,6 +40,14 @@ class Slider extends React.Component {
             padding-bottom: 1rem;
             margin: 0;
             position: relative;
+          }
+
+          label {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
           }
 
           input[type="range"]::before,
