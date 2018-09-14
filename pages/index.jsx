@@ -76,6 +76,10 @@ class Page extends React.Component {
             width: 80%;
             margin: 0 auto;
           }
+
+          li {
+            list-style-type: none;
+          }
         `}</style>
       </React.Fragment>
     );
