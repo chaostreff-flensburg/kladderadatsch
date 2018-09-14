@@ -5,6 +5,12 @@ import Slider from "../components/Slider";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 class Page extends React.Component {
+  componentDidMount = () => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  };
+
   render() {
     return (
       <React.Fragment>
