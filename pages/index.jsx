@@ -35,11 +35,11 @@ class Page extends React.Component {
       navigator.serviceWorker.register("/sw.js");
     }
     let tasks = this.retrieveTasks();
-    if (tasks !== undefined) {
+    if (tasks != undefined) {
       this.setState({ tasks: tasks });
     }
     let energy = this.retrieveEnergylevel();
-    if (energy !== undefined) {
+    if (energy != undefined) {
       this.setState({ energyLevel: energy });
     }
   };
