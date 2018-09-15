@@ -31,6 +31,7 @@ class Page extends React.Component {
   };
 
   onDragEnd = result => {
+    if (!result.destination) return;
     let movedTask = this.state.tasks[result.source.index];
     let newTaskArray = this.state.tasks;
     newTaskArray.splice(result.source.index, 1);
