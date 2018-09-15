@@ -147,7 +147,7 @@ class Page extends React.Component {
           body {
             margin: 0;
             color: #605f5e;
-            font-family: "Roboto", sans-serif;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
           }
           main {
             width: 80%;
