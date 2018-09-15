@@ -48,7 +48,7 @@ class Navigation extends React.Component {
           </figure>
           <figure className="mark">
             <img className="logo" src="../static/icon-512.png" alt="" />
-            <figcaption className="title">Kladderadatsch</figcaption>
+            <figcaption className="title">Kladderadats.ch</figcaption>
           </figure>
           <figure className="add" onClick={this.props.onCreateTask}>
             <span>
