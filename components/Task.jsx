@@ -16,28 +16,28 @@ class Task extends React.Component {
         <style jsx>{`
           li {
             list-style: none;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            padding-left: 2rem;
-            border-top: solid 1px #605f5e;
+            margin: 12px 0;
+            padding: 16px;
+            padding-left: 4rem;
             position: relative;
             font-size: 20px;
-            font-weight: 300;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+
+            border: solid 1px #dedede;
+            border-radius: 6px;
+            background-color: #fff;
           }
 
           li::before {
             content: "";
             position: absolute;
-            height: 20px;
-            width: 20px;
-            background-color: ${"hsl(" + this.props.color + ", 69%, 67%)"};
+            height: 30px;
+            width: 30px;
+            background-color: ${"hsl(" + this.props.color + ", 100%, 65%)"};
             border-radius: 50%;
-            top: 32%;
-            left: 0;
-          }
-
-          li:first-child {
-            border-top: none;
+            top: 13px;
+            left: 16px;
           }
         `}</style>
       </React.Fragment>
