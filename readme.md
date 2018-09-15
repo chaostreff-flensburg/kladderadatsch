@@ -109,7 +109,6 @@ Wir wollen alle Preisgelder in die Weiterentwicklung und Verbreitung der Anwendu
 
 Die Demo am besten auf einem Android Gerät ausführen und bei Aufforderung zum Startbidschirm hinzufügen um die Webapp zu installieren.
 * [unser Video](https://drive.google.com/...)
-* [unsere coole Präsi](https://box.com/...)
 
 
 ## Was steckt in der Lösung (Architecture / Technology)
