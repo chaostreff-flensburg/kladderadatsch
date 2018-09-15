@@ -78,6 +78,7 @@ class Page extends React.Component {
                             title={task.title}
                             innerref={provided.innerRef}
                             provided={provided}
+                            done={task.done}
                           />
                         )}
                       </Draggable>
@@ -99,6 +100,7 @@ class Page extends React.Component {
                             title={task.title}
                             innerref={provided.innerRef}
                             provided={provided}
+                            done={task.done}
                             disabled={true}
                           />
                         )}

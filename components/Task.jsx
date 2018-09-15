@@ -29,6 +29,8 @@ class Task extends React.Component {
             background-color: #fff;
 
             opacity: ${this.props.disabled ? "0.5" : "1"};
+
+            text-decoration: ${this.props.done ? "line-through" : "none"};
           }
 
           li::before {
