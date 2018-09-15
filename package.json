@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production node server/index.js"
   },
   "dependencies": {
+    "nanoid": "^1.2.3",
     "next": "^6.1.1",
     "react": "^16.4.2",
     "react-beautiful-dnd": "^9.0.2",

@@ -50,14 +50,14 @@ class Navigation extends React.Component {
             <img className="logo" src="../static/icon-512.png" alt="" />
             <figcaption className="title">Kladderadatsch</figcaption>
           </figure>
-          <figure className="add" onClick={this.showAddTask}>
+          <figure className="add" onClick={this.props.onCreateTask}>
             <span>
               <PlusCircle />
             </span>
             <figcaption>Neue Aufgabe</figcaption>
           </figure>
         </nav>
-        <form id="form">
+        {/* <form id="form">
           <span className="close" onClick={this.hideAddTask}>
             <XCircle />
           </span>
@@ -66,7 +66,7 @@ class Navigation extends React.Component {
           <label htmlFor="slider">Benötige Energie</label>
           <input type="range" min="0" max="360" step="10" id="slider" />
           <button onClick={this.save}>Speichern</button>
-        </form>
+        </form> */}
 
         <style jsx>{`
           .title {

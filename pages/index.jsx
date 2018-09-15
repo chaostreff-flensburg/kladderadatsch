@@ -5,6 +5,7 @@ import {
   Draggable,
   resetServerContext
 } from "react-beautiful-dnd";
+import nanoid from "nanoid";
 
 import Header from "../components/Header";
 import Task from "../components/Task";
@@ -43,10 +44,20 @@ class Page extends React.Component {
     this.setState({ energyLevel: energyLevel });
   };
 
+  createTask = () => {
+    let newTaskArray = this.state.tasks;
+    newTaskArray.push({
+      id: nanoid(),
+      title: "newTask",
+      color: Math.random() * (359 - 1) + 1
+    })
+    this.setState({ tasks: newTaskArray });
+  };
+
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header onCreateTask={this.createTask} />
 
         <main>
           <DragDropContext onDragEnd={this.onDragEnd}>
