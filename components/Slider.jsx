@@ -18,8 +18,8 @@ class Slider extends React.Component {
             id="slider"
             onChange={this.sliderChange}
             type="range"
-            min="0"
-            max="100"
+            min="1"
+            max={this.props.maxLevel + 1}
             step="any"
             value={this.props.energyLevel}
           />

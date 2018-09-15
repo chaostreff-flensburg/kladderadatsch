@@ -15,7 +15,7 @@ class Page extends React.Component {
     super(props);
     resetServerContext();
     this.state = {
-      energyLevel: 0,
+      energyLevel: 1,
       tasks: [
         { id: "nanoid-1337", title: "Beispiel Task", color: "123" },
         { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" },
@@ -40,7 +40,7 @@ class Page extends React.Component {
 
   onSliderChange = energyLevel => {
     this.setState({ energyLevel: energyLevel });
-  }
+  };
 
   render() {
     return (
@@ -52,28 +52,34 @@ class Page extends React.Component {
             <Droppable droppableId="tasklist">
               {(provided, snapshot) => (
                 <ul ref={provided.innerRef} {...provided.droppableProps}>
-                  {this.state.tasks.map((task, index) => (
-                    <Draggable
-                      draggableId={task.id}
-                      index={index}
-                      key={task.id}
-                    >
-                      {(provided, snapshot) => (
-                        <Task
-                          color={task.color}
-                          title={task.title}
-                          innerref={provided.innerRef}
-                          provided={provided}
-                        />
-                      )}
-                    </Draggable>
-                  ))}
+                  {this.state.tasks
+                    .slice(0, this.state.energyLevel)
+                    .map((task, index) => (
+                      <Draggable
+                        draggableId={task.id}
+                        index={index}
+                        key={task.id}
+                      >
+                        {(provided, snapshot) => (
+                          <Task
+                            color={task.color}
+                            title={task.title}
+                            innerref={provided.innerRef}
+                            provided={provided}
+                          />
+                        )}
+                      </Draggable>
+                    ))}
                 </ul>
               )}
             </Droppable>
           </DragDropContext>
           <section className="energy-slider">
-            <Slider energyLevel={this.state.energyLevel} onSliderChange={value => this.onSliderChange(value)} />
+            <Slider
+              energyLevel={this.state.energyLevel}
+              maxLevel={this.state.tasks.length}
+              onSliderChange={value => this.onSliderChange(value)}
+            />
           </section>
         </main>
 
