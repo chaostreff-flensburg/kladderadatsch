@@ -60,13 +60,29 @@ class Slider extends React.Component {
           }
 
           input[type="range"]::before {
-            content: "-";
+            content: " -";
             left: 0;
+
+            width: 20px;
+            height: 20px;
+
+            color: #fff;
+
+            border-radius: 50%;
+            background-color: #47a4dd;
           }
 
           input[type="range"]::after {
-            content: "+";
+            content: " +";
             right: 0;
+
+            width: 20px;
+            height: 20px;
+
+            color: #fff;
+
+            border-radius: 50%;
+            background-color: #ffc952;
           }
         `}</style>
       </React.Fragment>

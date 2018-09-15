@@ -178,11 +178,12 @@ class Page extends React.Component {
               Ubuntu, "Helvetica Neue", Arial, sans-serif;
           }
           main {
-            width: 80%;
+            max-width: 620px;
             margin: 0 auto;
           }
 
           ul {
+            margin: 0 16px;
             margin-top: 110px;
             margin-bottom: 100px;
           }
