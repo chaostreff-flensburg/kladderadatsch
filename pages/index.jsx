@@ -18,9 +18,9 @@ class Page extends React.Component {
     this.state = {
       energyLevel: 1,
       tasks: [
-        { id: "basic-0", title: "Zähne putzen", color: "123" },
-        { id: "basic-1", title: "Duschen/Waschen", color: "321" },
-        { id: "basic-2", title: "2 Mahlzeiten essen", color: "220" }
+        { id: "basic-0", title: "Zähne putzen", done: false, color: "123" },
+        { id: "basic-1", title: "Duschen/Waschen", done: false, color: "321" },
+        { id: "basic-2", title: "2 Mahlzeiten essen", done: false, color: "220" }
       ]
     };
   }
@@ -49,8 +49,15 @@ class Page extends React.Component {
     newTaskArray.push({
       id: nanoid(),
       title: "newTask",
+      done: false,
       color: Math.random() * (359 - 1) + 1
     })
+    this.setState({ tasks: newTaskArray });
+  };
+
+  toggleTask = (index) => {
+    let newTaskArray = this.state.tasks;
+    newTaskArray[index].done = !newTaskArray[index].done;
     this.setState({ tasks: newTaskArray });
   };
 
@@ -79,6 +86,7 @@ class Page extends React.Component {
                             innerref={provided.innerRef}
                             provided={provided}
                             done={task.done}
+                            onSetDone={e => this.toggleTask(index)}
                           />
                         )}
                       </Draggable>
@@ -101,6 +109,7 @@ class Page extends React.Component {
                             innerref={provided.innerRef}
                             provided={provided}
                             done={task.done}
+                            onSetDone={e => e.preventDefault}
                             disabled={true}
                           />
                         )}

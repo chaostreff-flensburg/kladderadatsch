@@ -9,6 +9,7 @@ class Task extends React.Component {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={innerref}
+          onClick={e => this.props.onSetDone(e)}
         >
           {this.props.title}
         </li>
