@@ -20,7 +20,12 @@ class Page extends React.Component {
       tasks: [
         { id: "basic-0", title: "Zähne putzen", done: false, color: "123" },
         { id: "basic-1", title: "Duschen/Waschen", done: false, color: "321" },
-        { id: "basic-2", title: "2 Mahlzeiten essen", done: false, color: "220" }
+        {
+          id: "basic-2",
+          title: "2 Mahlzeiten essen",
+          done: false,
+          color: "220"
+        }
       ]
     };
   }
@@ -38,10 +43,12 @@ class Page extends React.Component {
     newTaskArray.splice(result.source.index, 1);
     newTaskArray.splice(result.destination.index, 0, movedTask);
     this.setState({ tasks: newTaskArray });
+    this.saveTasks(newTaskArray);
   };
 
   onSliderChange = energyLevel => {
     this.setState({ energyLevel: energyLevel });
+    this.saveEnergylevel(energyLevel);
   };
 
   createTask = () => {
@@ -51,14 +58,34 @@ class Page extends React.Component {
       title: "newTask",
       done: false,
       color: Math.random() * (359 - 1) + 1
-    })
+    });
     this.setState({ tasks: newTaskArray });
+    this.saveTasks(newTaskArray);
   };
 
-  toggleTask = (index) => {
+  toggleTask = index => {
     let newTaskArray = this.state.tasks;
     newTaskArray[index].done = !newTaskArray[index].done;
     this.setState({ tasks: newTaskArray });
+    this.saveTasks(newTaskArray);
+  };
+
+  saveTasks = tasks => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  };
+
+  saveEnergylevel = energyLevel => {
+    localStorage.setItem("energyLevel", JSON.stringify(energyLevel));
+  };
+
+  retrieveTasks = () => {
+    var tasksString = localStorage.getItem("tasks");
+    return JSON.parse(tasksString);
+  };
+
+  retrieveEnergylevel = () => {
+    var energyLevelString = localStorage.getItem("energyLevel");
+    return JSON.parse(energyLevelString);
   };
 
   render() {
@@ -92,9 +119,9 @@ class Page extends React.Component {
                       </Draggable>
                     ))}
 
-                    <hr/>
+                  <hr />
 
-                    {this.state.tasks
+                  {this.state.tasks
                     .slice(this.state.energyLevel, this.state.tasks.length)
                     .map((task, index) => (
                       <Draggable
@@ -147,7 +174,8 @@ class Page extends React.Component {
           body {
             margin: 0;
             color: #605f5e;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              Ubuntu, "Helvetica Neue", Arial, sans-serif;
           }
           main {
             width: 80%;
