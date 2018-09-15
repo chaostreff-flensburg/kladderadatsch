@@ -1,11 +1,6 @@
 import React from "react";
 
 class Task extends React.Component {
-  getRandomColor = () => {
-    var color = Math.floor(Math.random() * Math.floor(360));
-    return "hsl(" + color + ", 69%, 67%)";
-  };
-
   render() {
     const { provided, innerref } = this.props;
     return (
