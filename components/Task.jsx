@@ -11,7 +11,7 @@ class Task extends React.Component {
           ref={innerref}
           onClick={e => this.props.onSetDone(e)}
         >
-          {this.props.title}
+          <input type="text" value={this.props.title} onChange={this.props.onTitleChange} disabled={!this.props.editable} />
         </li>
 
         <style jsx>{`
@@ -21,17 +21,24 @@ class Task extends React.Component {
             padding: 16px;
             padding-left: 4rem;
             position: relative;
-            font-size: 20px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
 
             border: solid 1px #dedede;
             border-radius: 6px;
             background-color: #fff;
 
             opacity: ${this.props.disabled ? "0.5" : "1"};
+          }
 
+          input[type="text"] {
+            margin: 0;
+            padding: 0;
+
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
             text-decoration: ${this.props.done ? "line-through" : "none"};
+
+            border: none;
           }
 
           li::before {

@@ -61,6 +61,12 @@ class Page extends React.Component {
     this.setState({ tasks: newTaskArray });
   };
 
+  renameTask = (e, index) => {
+    let newTaskArray = this.state.tasks;
+    newTaskArray[index].title = e.nativeEvent.target.value;
+    this.setState({ tasks: newTaskArray });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -87,6 +93,8 @@ class Page extends React.Component {
                             provided={provided}
                             done={task.done}
                             onSetDone={e => this.toggleTask(index)}
+                            editable={false}
+                            onTitleChange={e => e.preventDefault}
                           />
                         )}
                       </Draggable>
@@ -111,6 +119,8 @@ class Page extends React.Component {
                             done={task.done}
                             onSetDone={e => e.preventDefault}
                             disabled={true}
+                            editable={true}
+                            onTitleChange={e => this.renameTask(e, Math.floor(this.state.energyLevel) + index)}
                           />
                         )}
                       </Draggable>
