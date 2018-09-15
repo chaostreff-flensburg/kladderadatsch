@@ -50,7 +50,7 @@ class Navigation extends React.Component {
             <img className="logo" src="../static/icon-512.png" alt="" />
             <figcaption className="title">Kladderadatsch</figcaption>
           </figure>
-          <figure onClick={this.showAddTask}>
+          <figure className="add" onClick={this.showAddTask}>
             <span>
               <PlusCircle />
             </span>
@@ -91,6 +91,10 @@ class Navigation extends React.Component {
 
           .add-task {
             display: inherit;
+          }
+
+          .add {
+            cursor: pointer;
           }
 
           button {
