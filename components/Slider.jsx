@@ -6,10 +6,10 @@ class Slider extends React.Component {
     this.state = { sliderValue: null };
   }
 
-  sliderChange = (e) => {
+  sliderChange = e => {
     let sliderState = e.nativeEvent.target.valueAsNumber;
-    this.setState({sliderValue: sliderState});
-  }
+    this.setState({ sliderValue: sliderState });
+  };
 
   render() {
     return (
