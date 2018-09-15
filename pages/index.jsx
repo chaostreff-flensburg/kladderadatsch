@@ -55,7 +55,7 @@ class Page extends React.Component {
     let newTaskArray = this.state.tasks;
     newTaskArray.push({
       id: nanoid(),
-      title: "newTask",
+      title: "Neue Aufgabe",
       done: false,
       color: Math.random() * (359 - 1) + 1
     });
