@@ -3,12 +3,10 @@ import React from "react";
 class Slider extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { sliderValue: null };
   }
 
   sliderChange = e => {
-    let sliderState = e.nativeEvent.target.valueAsNumber;
-    this.setState({ sliderValue: sliderState });
+    this.props.onSliderChange(e.nativeEvent.target.valueAsNumber);
   };
 
   render() {
@@ -23,6 +21,7 @@ class Slider extends React.Component {
             min="0"
             max="100"
             step="any"
+            value={this.props.energyLevel}
           />
         </form>
 

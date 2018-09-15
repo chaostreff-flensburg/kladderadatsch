@@ -15,6 +15,7 @@ class Page extends React.Component {
     super(props);
     resetServerContext();
     this.state = {
+      energyLevel: 0,
       tasks: [
         { id: "nanoid-1337", title: "Beispiel Task", color: "123" },
         { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" },
@@ -36,6 +37,10 @@ class Page extends React.Component {
     newTaskArray.splice(result.destination.index, 0, movedTask);
     this.setState({ tasks: newTaskArray });
   };
+
+  onSliderChange = energyLevel => {
+    this.setState({ energyLevel: energyLevel });
+  }
 
   render() {
     return (
@@ -68,7 +73,7 @@ class Page extends React.Component {
             </Droppable>
           </DragDropContext>
           <section className="energy-slider">
-            <Slider />
+            <Slider energyLevel={this.state.energyLevel} onSliderChange={value => this.onSliderChange(value)} />
           </section>
         </main>
 
