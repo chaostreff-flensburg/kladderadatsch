@@ -46,7 +46,7 @@ class Task extends React.Component {
             position: absolute;
             height: 30px;
             width: 30px;
-            background-color: ${"hsl(" + this.props.color + ", 100%, 65%)"};
+            background-color: ${this.props.disabled ? "#aaa" : "hsl(" + this.props.color + ", 100%, 65%)"};
             border-radius: 50%;
             top: 13px;
             left: 16px;
