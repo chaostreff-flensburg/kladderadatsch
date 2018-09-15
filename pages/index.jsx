@@ -34,6 +34,14 @@ class Page extends React.Component {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js");
     }
+    let tasks = this.retrieveTasks();
+    if (tasks !== undefined) {
+      this.setState({ tasks: tasks });
+    }
+    let energy = this.retrieveEnergylevel();
+    if (energy !== undefined) {
+      this.setState({ energyLevel: energy });
+    }
   };
 
   onDragEnd = result => {
@@ -148,7 +156,12 @@ class Page extends React.Component {
                             onSetDone={e => e.preventDefault}
                             disabled={true}
                             editable={true}
-                            onTitleChange={e => this.renameTask(e, Math.floor(this.state.energyLevel) + index)}
+                            onTitleChange={e =>
+                              this.renameTask(
+                                e,
+                                Math.floor(this.state.energyLevel) + index
+                              )
+                            }
                           />
                         )}
                       </Draggable>
