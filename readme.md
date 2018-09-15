@@ -2,7 +2,7 @@
 
 ![build status](https://drone.ctfl.space/api/badges/chaostreff-flensburg/kladderadatsch/status.svg)
 
-# Kladderadatsch - Let’s mok die shiet!
+# Kladderadatsch - Mok din shiet!
 Guided Self Help for people with depression
 
 ## Bestehende Teammitglieder:
@@ -105,7 +105,9 @@ Siehe den Punkt: Buisness Case.
 Wir wollen alle Preisgelder in die Weiterentwicklung und Verbreitung der Anwendung stecken. 
 
 ## Ready for the show (Livedemo / Video / Presentation)
-* [unsere Demo](https://demo.eu-de.mybluemix.net)
+* [unsere Demo](https://kladderadats.ch/)
+
+Die Demo am besten auf einem Android Gerät ausführen und bei Aufforderung zum Startbidschirm hinzufügen um die Webapp zu installieren.
 * [unser Video](https://drive.google.com/...)
 * [unsere coole Präsi](https://box.com/...)
 
