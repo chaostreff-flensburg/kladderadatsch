@@ -27,6 +27,8 @@ class Task extends React.Component {
             border: solid 1px #dedede;
             border-radius: 6px;
             background-color: #fff;
+
+            opacity: ${this.props.disabled ? "0.5" : "1"};
           }
 
           li::before {

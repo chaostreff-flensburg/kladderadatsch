@@ -17,9 +17,9 @@ class Page extends React.Component {
     this.state = {
       energyLevel: 1,
       tasks: [
-        { id: "nanoid-1337", title: "Beispiel Task", color: "123" },
-        { id: "nanoid-4223", title: "Beispiel Task 2", color: "321" },
-        { id: "nanoid-0000", title: "Beispiel Task 3", color: "220" }
+        { id: "basic-0", title: "Zähne putzen", color: "123" },
+        { id: "basic-1", title: "Duschen/Waschen", color: "321" },
+        { id: "basic-2", title: "2 Mahlzeiten essen", color: "220" }
       ]
     };
   }
@@ -71,6 +71,28 @@ class Page extends React.Component {
                         )}
                       </Draggable>
                     ))}
+
+                    <hr/>
+
+                    {this.state.tasks
+                    .slice(this.state.energyLevel, this.state.tasks.length)
+                    .map((task, index) => (
+                      <Draggable
+                        draggableId={task.id}
+                        index={Math.floor(this.state.energyLevel) + index}
+                        key={task.id}
+                      >
+                        {(provided, snapshot) => (
+                          <Task
+                            color={task.color}
+                            title={task.title}
+                            innerref={provided.innerRef}
+                            provided={provided}
+                            disabled={true}
+                          />
+                        )}
+                      </Draggable>
+                    ))}
                 </ul>
               )}
             </Droppable>
@@ -117,6 +139,11 @@ class Page extends React.Component {
 
           li {
             list-style-type: none;
+          }
+
+          hr {
+            margin: 20px 0;
+            border: solid 1px #dedede;
           }
         `}</style>
       </React.Fragment>
