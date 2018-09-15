@@ -125,7 +125,7 @@ class Navigation extends React.Component {
 
           nav {
             padding: 1rem;
-            border-bottom: solid 1px #605f5e;
+            border-bottom: solid 1px #dedede;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;

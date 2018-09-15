@@ -110,7 +110,7 @@ class Page extends React.Component {
           }
 
           ul {
-            margin-top: 100px;
+            margin-top: 110px;
             margin-bottom: 100px;
           }
 
