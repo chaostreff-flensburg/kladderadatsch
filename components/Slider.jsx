@@ -13,7 +13,7 @@ class Slider extends React.Component {
     return (
       <React.Fragment>
         <form>
-          <label htmlFor="slider">Energiereserve</label>
+          <label htmlFor="slider">Energie</label>
           <input
             id="slider"
             onChange={this.sliderChange}
@@ -44,8 +44,12 @@ class Slider extends React.Component {
           label {
             display: block;
             text-align: center;
-            font-size: 18px;
             margin: 0;
+
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
           }
 
           input[type="range"]::before,
