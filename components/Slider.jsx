@@ -4,17 +4,11 @@ class Slider extends React.Component {
   constructor(props) {
     super(props);
     this.state = { sliderValue: null };
-
-    // This binding is necessary to make `this` work in the callback
-    this.sliderChange = this.sliderChange.bind(this);
   }
 
-  sliderChange() {
-    var sliderState = document.getElementById("slider").value;
-    console.log(sliderState);
-    this.setState(state => ({
-      sliderValue: !state.sliderState
-    }));
+  sliderChange = (e) => {
+    let sliderState = e.nativeEvent.target.valueAsNumber;
+    this.setState({sliderValue: sliderState});
   }
 
   render() {
@@ -27,11 +21,10 @@ class Slider extends React.Component {
             onChange={this.sliderChange}
             type="range"
             min="0"
-            max="360"
-            step="10"
+            max="100"
+            step="any"
           />
         </form>
-
 
         <style jsx>{`
           form {
