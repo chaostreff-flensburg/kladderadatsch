@@ -70,6 +70,13 @@ class Page extends React.Component {
     this.saveTasks(newTaskArray);
   };
 
+  renameTask = (e, index) => {
+    let newTaskArray = this.state.tasks;
+    newTaskArray[index].title = e.nativeEvent.target.value;
+    this.setState({ tasks: newTaskArray });
+    this.saveTasks(newTaskArray);
+  };
+
   saveTasks = tasks => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   };
@@ -86,12 +93,6 @@ class Page extends React.Component {
   retrieveEnergylevel = () => {
     var energyLevelString = localStorage.getItem("energyLevel");
     return JSON.parse(energyLevelString);
-  };
-
-  renameTask = (e, index) => {
-    let newTaskArray = this.state.tasks;
-    newTaskArray[index].title = e.nativeEvent.target.value;
-    this.setState({ tasks: newTaskArray });
   };
 
   render() {
