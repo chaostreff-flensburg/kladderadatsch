@@ -136,7 +136,9 @@ class Page extends React.Component {
                       </Draggable>
                     ))}
 
-                  <hr />
+                  <li>
+                    <hr />
+                  </li>
 
                   {this.state.tasks
                     .slice(this.state.energyLevel, this.state.tasks.length)
