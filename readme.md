@@ -7,7 +7,7 @@ Guided Self Help for people with depression
 
 ## Bestehende Teammitglieder:
 
-* **Samuel Brinkmann (Softwarenetcklung, Texte)**
+* **Samuel Brinkmann (Softwareentwicklung, Texte)**
 * Thorben Dittmar (Softwareentwicklung, Logo)
 * Flemming Petersen (Softwareentwicklung)
 * Lana Hedinger (Texte, Research, Softwareentwicklung)
