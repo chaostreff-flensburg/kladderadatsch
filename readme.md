@@ -108,15 +108,12 @@ Wir wollen alle Preisgelder in die Weiterentwicklung und Verbreitung der Anwendu
 * [unsere Demo](https://kladderadats.ch/)
 
 Die Demo am besten auf einem Android Gerät ausführen und bei Aufforderung zum Startbidschirm hinzufügen um die Webapp zu installieren.
-* [unser Video](https://drive.google.com/...)
-
 
 ## Was steckt in der Lösung (Architecture / Technology)
 
-* [Architekturskizze](https://box.com/...)
-  * Runtime: JavaScript/React.js
-  * Storage: Local Storage
-  * Liste sonstiger Services: ServiceWorker, Next.Js, CodeStyles: Prettier
+* Runtime: JavaScript/React.js
+* Storage: Local Storage
+* Liste sonstiger Services: ServiceWorker, Next.Js, CodeStyles: Prettier
   
 ### Die Technik
 Die ganze Anwendung ist als [Progessive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) und Mobile First geplant. Technisch wird dieses mit Javascript und dem Framework [React.js](https://en.wikipedia.org/wiki/React_(JavaScript_library)) umgesetzt. Da die ganze Anwendung als PWA konzipiert ist, kombinieren wir die Vorteile einer Smartphone App und einer Anwendung, die nur im Web läuft. Sobald www.kladderadats.ch aufgerufen wird, gibt es die Möglichkeit die Anwendung zum Homescreen hinzuzufügen und auch offline zu benutzen.
