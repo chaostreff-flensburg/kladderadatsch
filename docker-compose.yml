@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  application:
+    container_name: kladderadatsch
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # This section is for the treafik reverse proxy
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.backend=heliopause"
+      - "traefik.frontend.rule=Host:kladderadats.ch"
+      - "traefik.docker.network=web"
+      - "traefik.port=80"
+    volumes:
+      - ./data:/app/data
+    restart: always
+
+networks:
+  web:
+    external: true
