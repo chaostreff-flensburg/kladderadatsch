@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width,minimum-scale=1" />
 
-          <title>Kladderadatsch</title>
           <meta name="theme-color" content="#ffffff" />
           <meta name="Description" content="Mood based Task Tracking."></meta>
           <link rel="icon" type="image/png" href="/icon-512.png" />
