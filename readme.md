@@ -1,7 +1,4 @@
 # kladderadatsch
-
-![build status](https://drone.ctfl.space/api/badges/chaostreff-flensburg/kladderadatsch/status.svg)
-
 # Kladderadatsch - Mok din shiet!
 Guided Self Help for people with depression
 
@@ -11,8 +8,6 @@ Guided Self Help for people with depression
 * Thorben Dittmar (Softwareentwicklung, Logo)
 * Flemming Petersen (Softwareentwicklung)
 * Lana Hedinger (Texte, Research, Softwareentwicklung)
-
-Team Channel on [Slack](https://bluehc.slack.com/messages/CCTR63RS9/)
 
 
 ## Idee / Challenge
@@ -105,7 +100,6 @@ Siehe den Punkt: Buisness Case.
 Wir wollen alle Preisgelder in die Weiterentwicklung und Verbreitung der Anwendung stecken. 
 
 ## Ready for the show (Livedemo / Video / Presentation)
-* [unsere Demo](https://kladderadats.ch/)
 
 Die Demo am besten auf einem Android Gerät ausführen und bei Aufforderung zum Startbidschirm hinzufügen um die Webapp zu installieren.
 
@@ -116,7 +110,7 @@ Die Demo am besten auf einem Android Gerät ausführen und bei Aufforderung zum 
 * Liste sonstiger Services: ServiceWorker, Next.Js, CodeStyles: Prettier
   
 ### Die Technik
-Die ganze Anwendung ist als [Progessive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) und Mobile First geplant. Technisch wird dieses mit Javascript und dem Framework [React.js](https://en.wikipedia.org/wiki/React_(JavaScript_library)) umgesetzt. Da die ganze Anwendung als PWA konzipiert ist, kombinieren wir die Vorteile einer Smartphone App und einer Anwendung, die nur im Web läuft. Sobald www.kladderadats.ch aufgerufen wird, gibt es die Möglichkeit die Anwendung zum Homescreen hinzuzufügen und auch offline zu benutzen.
+Die ganze Anwendung ist als [Progessive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) und Mobile First geplant. Technisch wird dieses mit Javascript und dem Framework [React.js](https://en.wikipedia.org/wiki/React_(JavaScript_library)) umgesetzt. Da die ganze Anwendung als PWA konzipiert ist, kombinieren wir die Vorteile einer Smartphone App und einer Anwendung, die nur im Web läuft. Sobald die Anwendung aufgerufen wird, gibt es die Möglichkeit die Anwendung zum Homescreen hinzuzufügen und auch offline zu benutzen.
 Aus Datenschutzgründen und Gründen der geringen Entwicklungszeit, werden alle Daten Lokal gespeichert (Local Storage). So wird Datenmissbrauch effektiv vorgebeugt und Datenschutzrichtlinien effektiv umgesetzt.
 
 
@@ -162,4 +156,4 @@ For detailed explanation on how things work, checkout the [Next.js docs](https:/
 
 ---
 
-Made with ♡ at [Chaostreff Flensburg](https://twitter.com/chaos_fl) | [CI & CD](https://drone.ctfl.space/chaostreff-flensburg/kladderadatsch) | [License](./LICENSE)
+Made with ♡ at [Chaostreff Flensburg](https://twitter.com/chaos_fl) | [License](./LICENSE)
