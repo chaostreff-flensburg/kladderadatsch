@@ -128,7 +128,7 @@ A node.js version of `10.4` or higher is needed. Older versions may work, but ar
 
 ## Development
 
-Pushing to master is restricted. Please work in a `feature/` or `bug/` branch and create a pull request. Merging requires the CI passing, an approved review and the branch being up to date.
+Pushing to main is restricted. Please work in a `feature/` or `bug/` branch and create a pull request. Merging requires the CI passing, an approved review and the branch being up to date.
 
 ### Build Setup
 
