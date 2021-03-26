@@ -1,0 +1,20 @@
+name: deploy to GH-Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+         node-version: '14' 
+      - run: npm ci
+      - run: npm run build
+      - run: npm run export
+      - uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: out # The folder the action should deploy.
