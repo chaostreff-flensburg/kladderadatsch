@@ -15,7 +15,7 @@ You can follow our progress in developing a fully usable prototype by looking at
 ### As a node.js Project
 
 Clone the repo and follow the build instructions under [Build Setup](#build-setup).
-A node.js version of `10.4` or higher is needed. Older versions may work, but are not tested.
+A node.js version of `14` or higher is needed. Older versions may work (next.js 10 supports >= 10.13.0), but are not tested.
 
 ## Development
 
