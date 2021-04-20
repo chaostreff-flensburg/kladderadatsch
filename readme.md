@@ -17,7 +17,8 @@ Privacy is one of our main goals. Your data lives and stays on your device and c
 
 The idea and an initial mockup were first developed at #HealthHackKiel 2018. You can read more about the [initial goals and the envisioned use cases in our original abstract](./docs/healthhackkiel.md).
 
-You can follow our progress in developing a fully usable prototype by looking at our [project roadmap](https://github.com/chaostreff-flensburg/kladderadatsch/projects/1). We will provide a hosted version to try the app for yourself soon.
+You can follow our progress in developing a fully usable prototype by looking at our [project roadmap](https://github.com/chaostreff-flensburg/kladderadatsch/projects/1).  
+Try the (not yet fully functional) app here: [kladdera.chaos.lol](https://kladdera.chaos.lol/)
 
 ## Deployment
 
@@ -28,7 +29,7 @@ A node.js version of `14` or higher is needed. Older versions may work (next.js 
 
 ## Development
 
-Pushing to main is restricted. Please work in a `feature/` or `bug/` branch and create a pull request. Merging requires the CI passing, an approved review and the branch being up to date.
+Please work in a `feature/` or `bug/` branch and create a pull request. Merging requires the CI passing and the branch being up to date.
 
 ### Build Setup
 
