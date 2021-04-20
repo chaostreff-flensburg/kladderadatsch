@@ -168,6 +168,7 @@ class Page extends React.Component {
                         )}
                       </Draggable>
                     ))}
+                  {provided.placeholder}
                 </ul>
               )}
             </Droppable>
