@@ -1,14 +1,12 @@
 name: build
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the main & dev branch
+  # but only for the dev branch
   push:
     branches:
-      - main
       - dev
   pull_request:
     branches:
-      - main
       - dev
 jobs:
   build:
