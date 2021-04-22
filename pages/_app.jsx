@@ -2,6 +2,8 @@
 import React from "react";
 import Head from "next/head";
 
+import "../styles/preflight.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
