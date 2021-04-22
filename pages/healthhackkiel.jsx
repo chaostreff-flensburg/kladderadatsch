@@ -7,9 +7,9 @@ import {
 } from "react-beautiful-dnd";
 import nanoid from "nanoid";
 
-import Header from "../components/Header";
-import Task from "../components/Task";
-import Slider from "../components/Slider";
+import Header from "../components/healthhackkiel/Header";
+import Task from "../components/healthhackkiel/Task";
+import Slider from "../components/healthhackkiel/Slider";
 
 class Page extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Page extends React.Component {
 
   componentDidMount = () => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js");
+      // navigator.serviceWorker.register("/sw.js");
     }
     let tasks = this.retrieveTasks();
     if (tasks != undefined) {
@@ -197,7 +197,7 @@ class Page extends React.Component {
           }
         `}</style>
 
-        <style jsx global>{`
+        <style jsx>{`
           body {
             margin: 0;
             color: #605f5e;
