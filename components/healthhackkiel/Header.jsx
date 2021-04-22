@@ -1,7 +1,5 @@
 import React from "react";
-import { Settings } from "react-feather";
-import { PlusCircle } from "react-feather";
-import { XCircle } from "react-feather";
+import { PlusCircle, Settings } from "lucide-react";
 
 class Navigation extends React.Component {
   getDate = () => {
