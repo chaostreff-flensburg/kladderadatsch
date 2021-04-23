@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #fcfdfd;
+  --text-color: rgb(55, 65, 81);
+  --text-color-light: rgb(107, 114, 128);
+
+  --shadow-l: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg-color: #090d12;
+  --text-color: rgb(243, 244, 246);
+
+  --shadow-l: 0 10px 25px -5px rgba(255, 255, 255, 0.1),
+  0 10px 10px -5px rgba(255, 255, 255, 0.1);
+}
+
+html {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

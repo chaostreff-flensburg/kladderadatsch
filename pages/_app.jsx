@@ -3,6 +3,7 @@ import React from "react";
 import Head from "next/head";
 
 import "../styles/preflight.css";
+import "../styles/base.css";
 
 function MyApp({ Component, pageProps }) {
   return (
