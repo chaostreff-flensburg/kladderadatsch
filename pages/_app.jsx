@@ -5,6 +5,8 @@ import Head from "next/head";
 import "../styles/preflight.css";
 import "../styles/base.css";
 
+import Navbar from "../components/Navbar";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -17,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/png" href="/icon-512.png" />
         <link rel="manifest" href="/manifest.json"></link>
       </Head>
+      <Navbar />
       <Component {...pageProps} />
     </>
   );

@@ -1,21 +1,64 @@
 :root {
   --bg-color: #fcfdfd;
-  --text-color: rgb(55, 65, 81);
-  --text-color-light: rgb(107, 114, 128);
+  --text-color: #111827;
+  --text-color-light: #6b7280;
 
   --shadow-l: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
-  0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] {
+[prefers-color-scheme="dark"] {
   --bg-color: #090d12;
-  --text-color: rgb(243, 244, 246);
+  --text-color: #f9fafb;
+  --text-color-light: #9ca3af;
 
   --shadow-l: 0 10px 25px -5px rgba(255, 255, 255, 0.1),
-  0 10px 10px -5px rgba(255, 255, 255, 0.1);
+    0 10px 10px -5px rgba(255, 255, 255, 0.1);
 }
 
 html {
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+body {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 24px; */
+  max-width: 75vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bolder;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: underline;
 }
