@@ -42,6 +42,8 @@ class Page extends React.Component {
     if (energy != undefined) {
       this.setState({ energyLevel: energy });
     }
+
+    document.documentElement.setAttribute("prefers-color-scheme", "light");
   };
 
   onDragEnd = result => {
