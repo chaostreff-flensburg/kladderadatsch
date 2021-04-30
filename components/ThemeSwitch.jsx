@@ -8,12 +8,11 @@ function ThemeSwitch() {
   useEffect(() => {
     if (JSON.parse(localStorage.getItem("darkmode")) != undefined) {
       toggleTheme(JSON.parse(localStorage.getItem("darkmode")));
-    }
-    else if (
+    } else if (
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches 
+      window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setDarkmode(true)
+      setDarkmode(true);
     }
   }, []);
 
