@@ -47,6 +47,9 @@ function ThemeSwitch() {
       </label>
 
       <style jsx>{`
+        label {
+          cursor: pointer;
+        }
         input {
           display: none;
         }
