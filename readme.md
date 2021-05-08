@@ -18,7 +18,7 @@ Privacy is one of our main goals. Your data lives and stays on your device and c
 The idea and an initial mockup were first developed at #HealthHackKiel 2018. You can read more about the [initial goals and the envisioned use cases in our original abstract](./docs/healthhackkiel.md).
 
 You can follow our progress in developing a fully usable prototype by looking at our [project roadmap](https://github.com/chaostreff-flensburg/kladderadatsch/projects/1).  
-Try the (not yet fully functional) app here: [kladdera.chaos.lol](https://kladdera.chaos.lol/)
+Try the (not yet fully functional) app here: [Kladderadatsch.app](https://www.Kladderadatsch.app/)
 
 ## Deployment
 
