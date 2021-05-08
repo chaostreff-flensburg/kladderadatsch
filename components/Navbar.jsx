@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Book, Home } from "lucide-react";
+import { Home, Info } from "lucide-react";
 
 import ThemeSwitch from "./ThemeSwitch";
 
@@ -15,9 +15,9 @@ function Navbar() {
             <Home size="32" color="var(--text-color-light)" />
           </a>
         </Link>
-        <Link href="/blog">
+        <Link href="/info">
           <a>
-            <Book size="32" color="var(--text-color-light)" />
+            <Info size="32" color="var(--text-color-light)" />
           </a>
         </Link>
       </nav>
