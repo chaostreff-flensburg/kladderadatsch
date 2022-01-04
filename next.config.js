@@ -1,10 +1,10 @@
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx$/,
-});
-
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+})
 module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "md", "mdx"],
-  future: {
-    webpack5: true,
-  }
-});
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+})
