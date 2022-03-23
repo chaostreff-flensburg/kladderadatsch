@@ -1,6 +1,11 @@
-# Build
-build
-.next
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
 
 # Logs
 logs
@@ -19,14 +24,6 @@ coverage
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
-
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directory
-# Commenting this out is preferred by some people, see
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
-node_modules
 
 # Users Environment Variables
 .lock-wscript
@@ -62,10 +59,6 @@ node_modules
 *.DS_Store
 .AppleDouble
 .LSOverride
-
-# Icon must end with two \r
-Icon
-
 
 # Thumbnails
 ._*
@@ -106,7 +99,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Others
-data/
-xd/
