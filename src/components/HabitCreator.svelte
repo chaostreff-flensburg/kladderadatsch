@@ -61,7 +61,6 @@
           required
           class="w-10 text-right focus:outline-none"
         />
-        <!-- FIX: default selection not showing on mount -->
         <select
           name="intervalMultiplier"
           id="intervalMultiplier"
@@ -78,7 +77,7 @@
         </select>
       </div>
 
-      <div>
+      <div class="hidden">
         <input
           type="time"
           name="preferedTime"

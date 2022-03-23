@@ -86,7 +86,7 @@
             class="-mt-1 inline h-5"
           />
         </div>
-        <div class="col-start-2 mt-2 text-right">
+        <div class="col-start-2 mt-2 hidden text-right">
           {habit.preferedTime}<AlarmClock class="mb-1 inline h-5" />
         </div>
         <button
