@@ -1,0 +1,16 @@
+{
+  "name": "Kladderadatsch",
+  "short_name": "Kladdera",
+  "theme_color": "#171717",
+  "display": "Standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

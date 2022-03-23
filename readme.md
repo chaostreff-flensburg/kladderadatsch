@@ -8,7 +8,7 @@ Kladderadatsch is a mood based task tracking app for people trying to build long
 We are focusing on getting you started in a few clicks, instead of investing lots of mental resources in a complicated sign up and set up process.
 
 By starting the App for the first time, you will have a basic set up, which is designed for people dealing with depression, that can be adjusted later, or on the go.
-Depending on your current mood, the app will select a set of housekeeping, hygiene, responsibility or self-care task for you to focus on. 
+Depending on your current mood, the app will select a set of housekeeping, hygiene, responsibility or self-care task for you to focus on.
 To safe users from overstress by watching a huge to do list, we only show a mood and energy based selection, but prioritize unfinished or not shown task in the background, so they do not get lost in and after low energy periods.
 We hope that by using this app, people can invest their already scarce vitality and liveliness on their well-beeing, instead of worrying and feeling stressed about their daily life.
 
@@ -25,7 +25,7 @@ Try the (not yet fully functional) app here: [Kladderadatsch.app](https://www.Kl
 ### As a node.js Project
 
 Clone the repo and follow the build instructions under [Build Setup](#build-setup).
-A node.js version of `14` or higher is needed. Older versions may work (next.js 10 supports >= 10.13.0), but are not tested.
+A node.js version of `16` or higher is needed. Older versions may work, but are not tested.
 
 ## Development
 
@@ -40,20 +40,25 @@ $ npm install # Or yarn install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build for production
 $ npm run build
-$ npm start
 ```
+
+### Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ### Code Style
 
 This project uses [Prettier](https://prettier.io) to format code. Prettier should be run before creating a pull request. You can run it with the default settings from your editor. For more information, refer to the [official documentation](https://prettier.io).
-
-### Frameworks
-
-#### Next.js
-
-For detailed explanation on how things work, checkout the [Next.js docs](https://nextjs.org/).
 
 ---
 
