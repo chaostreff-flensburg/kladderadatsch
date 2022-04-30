@@ -53,7 +53,7 @@
 
 {#if !hidden}
   <div
-    class="mb-2 w-full max-w-lg divide-y-2 divide-neutral-100 rounded-md bg-white shadow-sm dark:divide-neutral-700 dark:bg-neutral-800"
+    class="mb-2 w-full max-w-lg divide-y-2 divide-neutral-100 overflow-hidden rounded-md bg-white shadow-md dark:divide-neutral-700 dark:bg-neutral-800"
   >
     <div class="flex">
       <div on:click={toggleOpen} class="grow cursor-pointer p-4">
