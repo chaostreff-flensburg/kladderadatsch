@@ -8,7 +8,6 @@
   import { toUnixTS } from "../utils/DateUtils";
 
   import Habit from "../components/Habit.svelte";
-  import HabitCreator from "../components/HabitCreator.svelte";
 
   $: sortedHabits = sortHabits($state.habits.toJSON());
 
@@ -59,10 +58,4 @@
       <Habit _id={habit._id} />
     </li>
   {/each}
-  <li
-    transition:fade={{ intro: true, easing: expoOut }}
-    class="flex w-full justify-center"
-  >
-    <HabitCreator />
-  </li>
 </ul>

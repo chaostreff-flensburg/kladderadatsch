@@ -4,7 +4,7 @@ import { WebrtcProvider } from "y-webrtc";
 import { svelteSyncedStore } from "@syncedstore/svelte";
 import { nanoid } from "nanoid";
 
-export const store = syncedStore({ habits: [] });
+export const store = syncedStore({ habits: [], tools: {} });
 export const state = svelteSyncedStore(store);
 
 const doc = getYjsValue(store);

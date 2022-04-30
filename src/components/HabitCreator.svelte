@@ -1,7 +1,7 @@
 <script>
   import { dev } from "$app/env";
   import { nanoid } from "nanoid";
-  import { AlarmClock, PlusSquare, Repeat } from "lucide-svelte";
+  import { PlusSquare, Repeat } from "lucide-svelte";
 
   import { state } from "../components/store";
 
@@ -27,14 +27,15 @@
   }
 </script>
 
-<details
-  class="mt-2 w-full max-w-lg rounded-md bg-white p-4 shadow-sm dark:bg-neutral-800"
->
-  <summary class="cursor-pointer outline-none">New Habit</summary>
+<details class="py-2">
+  <summary
+    class="m-auto mt-1 max-w-xs cursor-pointer rounded-lg bg-sky-600 p-2 text-center text-lg font-bold text-white"
+    >Add Habit <PlusSquare class="-mt-1 inline-block" /></summary
+  >
   <form
     id="HabitCreator"
     on:submit|preventDefault={addHabit}
-    class="mt-2 flex w-full max-w-lg flex-col"
+    class="flex flex-wrap justify-between"
   >
     <input
       type="text"
@@ -42,15 +43,17 @@
       placeholder="Habit Name"
       bind:value={newHabit.title}
       required
-      class="text-2xl focus:outline-none"
+      class="mb-4 flex-grow rounded-md bg-neutral-50 p-2 text-xl shadow-sm focus:outline-none dark:bg-neutral-700"
     />
-
-    <div class="mt-2 flex justify-between">
-      <div>
-        <label for="interval">
-          <!-- FIX: Icons as labels are not accessible. -->
-          <Repeat class="-mr-1 inline h-5" />
-        </label>
+    <div class="flex flex-grow-0 flex-col">
+      <label
+        for="interval"
+        class="text-sm text-neutral-500 dark:text-neutral-400"
+      >
+        Repeat every:
+      </label>
+      <div class="mt-1.5">
+        <Repeat class="-mr-2 -mt-0.5 inline h-4" />
         <input
           type="number"
           name="interval"
@@ -76,35 +79,28 @@
           <option value={604800000}>Weeks</option>
         </select>
       </div>
-
-      <div class="hidden">
-        <input
-          type="time"
-          name="preferedTime"
-          id="preferedTime"
-          bind:value={newHabit.preferedTime}
-          class="focus:outline-none"
-        />
-        <label for="preferedTime">
-          <!-- FIX: Icons as labels are not accessible. -->
-          <AlarmClock class="mb-1.5 inline h-5" />
-        </label>
-      </div>
     </div>
 
     <button
       type="submit"
-      class="mt-4 flex max-w-fit items-center justify-center self-end rounded-md bg-sky-600 p-2 px-4 text-lg font-medium text-white"
+      class="flex w-fit items-center justify-center rounded-full bg-sky-600 p-4 text-lg font-medium text-white shadow-sm shadow-sky-600/5 transition hover:shadow-md hover:shadow-sky-600/25"
     >
-      Create Habit
-      <PlusSquare class="ml-1" />
+      <PlusSquare class="scale-110" />
     </button>
   </form>
 </details>
 
 <style>
-  input[type="time"]::-webkit-calendar-picker-indicator {
-    background: none;
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+  details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+  }
+
+  details[open] summary {
     display: none;
   }
 </style>

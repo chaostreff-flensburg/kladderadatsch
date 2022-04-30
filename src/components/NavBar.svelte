@@ -1,20 +1,21 @@
 <script>
-  import { LayoutDashboard, Library, Settings2 } from "lucide-svelte";
+  import { Library, Settings2 } from "lucide-svelte";
 
   import NavLink from "./NavLink.svelte";
+  import ToolSelect from "./ToolSelect.svelte";
+  import ToolView from "./ToolView.svelte";
 </script>
 
 <div class="fixed bottom-6 left-2 right-2 z-10 flex justify-center">
   <div
     class="w-5/6 max-w-xl rounded-3xl bg-white pl-4 pr-4 shadow-xl dark:bg-neutral-800"
   >
+    <ToolView />
     <nav class="flex justify-between p-4">
       <NavLink href="/resources">
         <Library />
       </NavLink>
-      <NavLink href="/">
-        <LayoutDashboard />
-      </NavLink>
+      <ToolSelect />
       <NavLink href="/settings">
         <Settings2 />
       </NavLink>
