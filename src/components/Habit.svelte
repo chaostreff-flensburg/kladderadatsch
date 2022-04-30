@@ -17,9 +17,10 @@
 
   let habit = $state.habits[$state.habits.findIndex((el) => el._id === _id)];
 
-  $: since = timeago.format(habit.lastDone);
+  let since = timeago.format(habit.lastDone);
+
   onMount(() => {
-    let timeagoInterval = setInterval(() => {
+    let update = setInterval(() => {
       since = timeago.format(habit.lastDone);
       if (Date.now() - toUnixTS(habit.lastDone) > habit.interval) {
         habit.streak = 0;
@@ -27,7 +28,7 @@
     }, 1000 * 60);
 
     return () => {
-      clearInterval(timeagoInterval);
+      clearInterval(update);
     };
   });
 
