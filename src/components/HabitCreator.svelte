@@ -43,7 +43,7 @@
       placeholder="Habit Name"
       bind:value={newHabit.title}
       required
-      class="mb-4 flex-grow rounded-md bg-neutral-50 p-2 text-xl shadow-sm focus:outline-none dark:bg-neutral-700"
+      class="mb-4 w-full flex-grow rounded-md bg-neutral-50 p-2 text-xl shadow-sm focus:outline-none dark:bg-neutral-700"
     />
     <div class="flex flex-grow-0 flex-col">
       <label
