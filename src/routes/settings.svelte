@@ -23,7 +23,7 @@
   }
 </script>
 
-<div class="p-4 pt-8">
+<div class="mx-auto max-w-lg p-4 pt-8">
   <h1 class="mb-2 text-3xl font-bold">Settings</h1>
   <canvas id="syncQR" class="mt-4 aspect-square max-w-sm" />
   <i class="text-neutral-400">Scan this code to sync to another device.</i>
