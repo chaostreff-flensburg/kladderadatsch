@@ -19,8 +19,8 @@
       }}
       href="?"
       class="scale-{$state.tools.selected == tool.name
-        ? '125'
-        : '150'} transition bg-{tool.color} rounded-full text-neutral-50"
+        ? '125 shadow-sm'
+        : '150 shadow-md'} transition bg-{tool.color} rounded-full text-neutral-50 shadow-sky-600/5 hover:shadow-sky-600/10"
     >
       <Plus class="scale-75" />
     </a>
