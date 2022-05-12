@@ -83,9 +83,9 @@
 
     <button
       type="submit"
-      class="flex w-fit items-center justify-center rounded-full bg-sky-600 p-4 text-lg font-medium text-white shadow-sm shadow-sky-600/5 transition hover:shadow-md hover:shadow-sky-600/25"
+      class="flex w-12 h-12 sm:w-fit sm:h-fit items-center justify-center rounded-full bg-sky-600 p-4 text-lg font-medium text-white shadow-sm shadow-sky-600/5 transition hover:shadow-md hover:shadow-sky-600/25"
     >
-      <PlusSquare class="scale-110" />
+      <PlusSquare class="scale-150 sm:scale-110" />
     </button>
   </form>
 </details>
